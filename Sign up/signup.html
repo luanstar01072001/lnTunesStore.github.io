@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LN*Tunes Store - Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;500&display=swap" rel="stylesheet">
+    <!--font-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel=<link rel="preconnect"
+        href="https://fonts.gstatic.com">
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@1,700&display=swap"
+        rel="stylesheet">
+    <!--font-->
+    <link rel="stylesheet" href="../verdors/css/grid.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--Favicon-->
+</head>
+<script type='text/javascript'>
+    //<![CDATA[
+    //Ctrl+U
+    shortcut = { all_shortcuts: {}, add: function (a, b, c) { var d = { type: "keydown", propagate: !1, disable_in_input: !1, target: document, keycode: !1 }; if (c) for (var e in d) "undefined" == typeof c[e] && (c[e] = d[e]); else c = d; d = c.target, "string" == typeof c.target && (d = document.getElementById(c.target)), a = a.toLowerCase(), e = function (d) { d = d || window.event; if (c.disable_in_input) { var e; d.target ? e = d.target : d.srcElement && (e = d.srcElement), 3 == e.nodeType && (e = e.parentNode); if ("INPUT" == e.tagName || "TEXTAREA" == e.tagName) return } d.keyCode ? code = d.keyCode : d.which && (code = d.which), e = String.fromCharCode(code).toLowerCase(), 188 == code && (e = ","), 190 == code && (e = "."); var f = a.split("+"), g = 0, h = { "`": "~", 1: "!", 2: "@", 3: "#", 4: "$", 5: "%", 6: "^", 7: "&", 8: "*", 9: "(", 0: ")", "-": "_", "=": "+", ";": ":", "'": '"', ",": "<", ".": ">", "/": "?", "\\": "|" }, i = { esc: 27, escape: 27, tab: 9, space: 32, "return": 13, enter: 13, backspace: 8, scrolllock: 145, scroll_lock: 145, scroll: 145, capslock: 20, caps_lock: 20, caps: 20, numlock: 144, num_lock: 144, num: 144, pause: 19, "break": 19, insert: 45, home: 36, "delete": 46, end: 35, pageup: 33, page_up: 33, pu: 33, pagedown: 34, page_down: 34, pd: 34, left: 37, up: 38, right: 39, down: 40, f1: 112, f2: 113, f3: 114, f4: 115, f5: 116, f6: 117, f7: 118, f8: 119, f9: 120, f10: 121, f11: 122, f12: 123 }, j = !1, l = !1, m = !1, n = !1, o = !1, p = !1, q = !1, r = !1; d.ctrlKey && (n = !0), d.shiftKey && (l = !0), d.altKey && (p = !0), d.metaKey && (r = !0); for (var s = 0; k = f[s], s < f.length; s++)"ctrl" == k || "control" == k ? (g++, m = !0) : "shift" == k ? (g++, j = !0) : "alt" == k ? (g++, o = !0) : "meta" == k ? (g++, q = !0) : 1 < k.length ? i[k] == code && g++ : c.keycode ? c.keycode == code && g++ : e == k ? g++ : h[e] && d.shiftKey && (e = h[e], e == k && g++); if (g == f.length && n == m && l == j && p == o && r == q && (b(d), !c.propagate)) return d.cancelBubble = !0, d.returnValue = !1, d.stopPropagation && (d.stopPropagation(), d.preventDefault()), !1 }, this.all_shortcuts[a] = { callback: e, target: d, event: c.type }, d.addEventListener ? d.addEventListener(c.type, e, !1) : d.attachEvent ? d.attachEvent("on" + c.type, e) : d["on" + c.type] = e }, remove: function (a) { var a = a.toLowerCase(), b = this.all_shortcuts[a]; delete this.all_shortcuts[a]; if (b) { var a = b.event, c = b.target, b = b.callback; c.detachEvent ? c.detachEvent("on" + a, b) : c.removeEventListener ? c.removeEventListener(a, b, !1) : c["on" + a] = !1 } } }, shortcut.add("Ctrl+U", function () { top.location.href = "/" });
+    //]]>
+</script>
+<script language=JavaScript>
+    // <!--
+    var message = "Bản Quyền Thuộc Về LN*Tunes Store";
+    ///////////////////////////////////
+    function clickIE() { if (document.all) { (message); return false; } }
+    function clickNS(e) {
+        if
+            (document.layers || (document.getElementById && !document.all)) {
+            if (e.which == 2 || e.which == 3) { (message); return false; }
+        }
+    }
+    if (document.layers) { document.captureEvents(Event.MOUSEDOWN); document.onmousedown = clickNS; }
+    else { document.onmouseup = clickNS; document.oncontextmenu = clickIE; }
+    document.oncontextmenu = new Function("return false")
+    // -->
+</script>
+<body>
+    <header>
+        <a href="../luanngo.html"><img class="Logo" src="../resources/img/Belong12.png" alt="Logo"></a>
+        <div class="clearfix"></div>
+        <div class="row">
+            <div class="heading">
+                <h1>
+                    Sign Up For Free To Start Listening
+                </h1>
+                <a href="https://vi-vn.facebook.com/login/web/" class="btn"><i class="fab fa-facebook small-icon"></i>Sign Up For Facebook </a>
+                <p class="TT1">By clicking on sign-up, you agree to <span class="TT2"><u>
+                            LN*Tunes Store Terms and Conditions of Use</u></span></p>
+                <p class="TT3">To learn more about how LN*Tunes collects, uses, shares and protects your personal data,
+                    please see the <br>
+                    <span class="TT4"> <u>LN*Tunes Store Privacy Policy</u></span>
+                </p>
+            </div>
+    </header>
+    <section class="end-section" id="end">
+        <div class="row">
+            <form>
+                <div class="Email form-group">
+                    <label for="Email" class="Email1"> What's Your Email?</label>
+                    <textarea class="Email2 auth-form__input" placeholder="Enter your email"></textarea>
+                    <span class="form-message"></span>
+                </div>
+                <div class="Email3 form-group">
+                    <label for="Email3" class="Email4">Confirm Your Email</label>
+                    <textarea class="Email5 auth-form__input" placeholder="Enter your email again"></textarea>
+                    <span class="form-message"></span>
+                </div>
+                <div class="mk form-group">
+                    <label for="mk" class="mk1"> Create A Password</label>
+                    <textarea class="mk2 auth-form__input" placeholder="Create a password"></textarea>
+                    <span class="form-message"></span>
+                </div>
+                <div class="ten form-group">
+                    <label for="ten" class="ten1">What Should We Call You?</label>
+                    <textarea class="ten2 auth-form__input" placeholder="Enter a profile name"></textarea>
+                    <span class="form-message"></span>
+                </div>
+                <div class="ngaysinh">
+                    <label for="ngaysinh" class="ngaysinh1">What's Your Date Of Birth?</label>
+                    <div class="row">
+                        <div class="col 1-of-3">
+                            <textarea class="ngaysinh2" placeholder="Day"></textarea>
+                        </div>
+                        <div class="col 2-of-3">
+                            <select>
+                                <option value="value01">Month</option>
+                                <option value="value02">January</option>
+                                <option value="value03">February</option>
+                                <option value="value04"> March</option>
+                                <option value="value04">April</option>
+                                <option value="value04">May</option>
+                                <option value="value04">June</option>
+                                <option value="value04">July</option>
+                                <option value="value04">August</option>
+                                <option value="value04">September</option>
+                                <option value="value04">October</option>
+                                <option value="value04">November</option>
+                                <option value="value04">December</option>
+                            </select>
+                        </div>
+                        <div class="col 3-of-3">
+                            <textarea class="ngaysinh3" placeholder="Year"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <fieldset role="radiogroup" class="gioitinh">
+                    <legend class="gioitinh1">What Is Your Gender?</legend>
+                    <div class="gioitinh2">
+                        <div class="gioitinh3">
+                            <input type="radio" id="gender_option_male" name="gender" required="" value="male"
+                                aria-invalid="false" class="gioitinh4">
+                            <label for="gender_option_male" class="giotinh5">Male</label>
+                        </div>
+                        <div class="gioitinh6">
+                            <input type="radio" id="gender_option_female" name="gender" required="" value="female"
+                                aria-invalid="false" class="gioitinh7">
+                            <label for="gender_option_female" class="giotinh8">Female</label>
+                        </div>
+                        <div class="gioitinh9">
+                            <input type="radio" id="gender_option_no" name="gender" required="" value="no"
+                                aria-invalid="false" class="gioitinh10">
+                            <label for="gender_option_no" class="giotinh11">No Gender Discrimination</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="end">
+                    <p class="TT5">By clicking on sign-up, you agree to <span class="TT6"><u>
+                                LN*Tunes Store Terms and Conditions of Use</u></span></p>
+                    <p class="TT7">To learn more about how LN*Tunes collects, uses, shares and protects your personal
+                        data,
+                        please see the <br>
+                        <span class="TT8"> <u>LN*Tunes Store Privacy Policy</u></span>
+                        <a href="#" class="btn1 btn__print">Sign Up</a>
+                </div>
+                <p class="TT9"> You Already Have An Account?</p>
+                <a href="../LogIn/login.html" class="btn2">Log In</a>
+            </form>
+        </div>
+    </section>
+    <script src="./signup.js"></script>
+</body>
+
+</html>

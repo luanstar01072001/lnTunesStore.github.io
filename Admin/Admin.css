@@ -1,0 +1,1696 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  html{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 20px;
+    color: #5a5a5a;
+    background-color: #ffffff;
+    text-rendering: optimizeLegibility;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .row{
+      margin: 0 auto;
+      max-width: 1140px;
+  }
+  .Logo{
+    max-width: 4cm;
+    float: left;
+    margin-top: -25px;
+    margin-left: 5cm;
+  }
+  header{
+    width: 100%;
+    height: 2.5cm;
+    background-color: black;
+  }
+  .menu{
+    float: right;
+    list-style: none; 
+    margin-right: 50px;
+    margin-top: 35px;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+    font-size: 110%;
+    font-weight: 700;
+    transition: all 0.4s;
+    padding: 3px 0;
+    width: 200px;
+    height: 200px;
+    padding: 4px;
+    border-radius: 3px;
+}
+.menu li{
+    display: inline-block;
+    margin-right: 30px;
+}
+.menu li a:hover,
+.menu li a:active{
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    box-shadow: 0 0 10px #eee;
+}
+  .clearfix::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+  .about-section{
+      width: 100%;
+      height: 500px;
+      margin: 0 auto;
+      background-color: #8BC6EC;
+      background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+      position: relative;
+
+  }
+  .hello{
+      width: 273px;
+      height: 250px;
+      background-color: #85FFBD;
+      background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+      border-radius: 15px;
+      border: solid 4px #a0f0c5;
+      position: relative;
+      position: absolute;
+      top: 3cm;
+      left: 0.9cm;
+  }
+  .hello1{
+    width: 273px;
+    height: 250px;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    border-radius: 15px;
+    border: solid 4px #f5bc9b;
+    position: relative;
+    position: absolute;
+    top: 3cm;
+    left: 8.9cm;
+    
+}
+.hello2{
+    width: 273px;
+    height: 250px;
+    background-color: #F4D03F;
+    background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+    border-radius: 15px;
+    border: solid 4px #66b8a7;
+    position: relative;
+    position: absolute;
+    top: 3cm;
+    left: 16.9cm;
+}
+.hello3{
+    position: relative;
+    width: 273px;
+    height: 250px;
+    background-image: radial-gradient( circle 759px at -6.7% 50%,  rgba(80,131,73,1) 0%, rgba(140,209,131,1) 26.2%, rgba(178,231,170,1) 50.6%, rgba(144,213,135,1) 74.1%, rgba(75,118,69,1) 100.3% );
+    border-radius: 15px;
+    border: solid 4px rgba(140,209,131,1);
+    position: absolute;
+    top: 3cm;
+    left: 24.9cm;
+   
+}
+.hello4{
+    width: 273px;
+    height: 250px;
+    background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    border-radius: 15px;
+    transition:0.5s;
+    border: solid 4px #faaca0;
+    position: absolute;
+    top: 3cm;
+    left: 32.9cm;
+}
+h2{
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-top: 1cm;
+    font-size: 200%;
+}
+h2::after{
+  content:"";
+  display: block;
+  width: 230px;
+  height: 5px;
+  background-color: black;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+.TT{
+  text-align: center;
+  font-size: 95%;
+  font-weight: 900;
+  color:black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.hello5{
+  height: 40px;
+  width: 100px;
+  border-radius: 15px;
+  background-image: linear-gradient(to right, #00c6ff 0%, #0072ff  51%, #00c6ff  100%);
+  position: absolute;
+  left: -5px;
+  top: 1cm;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  display: block;
+}
+.hello5:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+  color: black;
+}
+.TT1{
+  margin-left: 10px;
+  margin-top: 5px;
+  font-size: 90%;
+  font-weight: 900;
+}
+
+.hello6{
+  height: 40px;
+  width: 100px;
+  border-radius: 15px;
+  background-image: linear-gradient(to right, #43cea2 0%, #185a9d  51%, #43cea2  100%);
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  display: block;
+  position: absolute;
+  left: -5px;
+  top: 2.2cm;
+}
+.hello6:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+  color: black;
+}
+.TT2{
+  margin-left: 10px;
+  margin-top: 7px;
+  font-size: 80%;
+  font-weight: 900;
+}
+.hello7{
+  height: 40px;
+  width: 100px;
+  border-radius: 15px;
+  background-image: linear-gradient(to right, #360033 0%, #0b8793  51%, #360033  100%);
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  display: block;
+  position: absolute;
+  left: -5px;
+  top: 3.4cm;
+}
+.hello7:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+  color: black;
+}
+.TT3{
+  margin-left: 10px;
+  margin-top: 7px;
+  font-size: 80%;
+  font-weight: 900;
+}
+.hello8{
+  height: 40px;
+  width: 100px;
+  border-radius: 15px;
+  background-image: linear-gradient(to right, #000428 0%, #004e92  51%, #000428  100%);
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  display: block;
+  position: absolute;
+  left: -5px;
+  top: 4.61cm;
+}
+.hello8:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+  color: black;
+}
+.TT4{
+  margin-left: 10px;
+  margin-top: 5px;
+  font-size: 90%;
+  font-weight: 900;
+}
+.hello9{
+  height: 40px;
+  width: 100px;
+  border-radius: 15px;
+  background-image: linear-gradient(to right, #00c6ff 0%, #0072ff  51%, #00c6ff  100%);
+  position: absolute;
+  left: -5px;
+  top: 1cm;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  display: block;
+}
+.hello9:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+  color: black;
+}
+.TT5{
+  margin-left: 10px;
+  margin-top: 5px;
+  font-size: 90%;
+  font-weight: 900;
+}
+
+.hello10{
+  height: 40px;
+  width: 100px;
+  border-radius: 15px;
+  background-image: linear-gradient(to right, #43cea2 0%, #185a9d  51%, #43cea2  100%);
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  display: block;
+  position: absolute;
+  left: -5px;
+  top: 2.2cm;
+}
+.hello10:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+  color: black;
+}
+.TT6{
+  margin-left: 10px;
+  margin-top: 7px;
+  font-size: 80%;
+  font-weight: 900;
+}
+.hello11{
+  height: 40px;
+  width: 100px;
+  border-radius: 15px;
+  background-image: linear-gradient(to right, #360033 0%, #0b8793  51%, #360033  100%);
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  display: block;
+  position: absolute;
+  left: -5px;
+  top: 3.4cm;
+}
+.hello11:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+  color: black;
+}
+.TT7{
+  margin-left: 10px;
+  margin-top: 7px;
+  font-size: 80%;
+  font-weight: 900;
+}
+.hello12{
+  height: 40px;
+  width: 100px;
+  border-radius: 15px;
+  background-image: linear-gradient(to right, #000428 0%, #004e92  51%, #000428  100%);
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  display: block;
+  position: absolute;
+  left: -5px;
+  top: 4.61cm;
+}
+.hello12:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+  color: black;
+}
+.TT8{
+  margin-left: 10px;
+  margin-top: 5px;
+  font-size: 90%;
+  font-weight: 900;
+}
+.luan{
+  width: 120px;
+  height: 90px;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  position: absolute;
+  top: 38px;
+  left: 10px;
+  border-radius: 15px;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  display: block;
+  transition: all 0.3s;
+}
+.luan:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 0 20px #eee;
+}
+.luan1{
+  width: 120px;
+  height: 90px;
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  position: absolute;
+  top: 140px;
+  left: 10px;
+  border-radius: 15px;
+  background-size: 200% auto;
+  color: white;            
+  display: block;
+  transition: all 0.3s;
+}
+.luan1:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 0 20px #eee;
+}
+.luan2{
+  width: 120px;
+  height: 90px;
+  background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+  position: absolute;
+  top: 38px;
+  left: 136px;
+  border-radius: 15px;
+  background-size: 200% auto;
+  color: white;            
+  display: block;
+  transition: all 0.3s;
+}
+.luan2:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 0 20px #eee;
+}
+.luan3{
+  width: 120px;
+  height: 90px;
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+  position: absolute;
+  top: 140px;
+  left: 136px;
+  border-radius: 15px;
+  background-size: 200% auto;
+  color: white;            
+  display: block;
+  transition: all 0.3s;
+}
+.luan3:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 0 20px #eee;
+}
+
+h4{
+  color: #004e92;
+  text-align: center;
+  font-size: 80%;
+  font-weight: 900;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.TT9{
+  font-weight: 900;
+  font-size: 72%;
+  margin-left: 20%;
+  color:black;
+}
+.TT10{
+  font-weight: 900;
+  font-size: 72%;
+  margin-left: 15%;
+  color:black;
+}
+.TT11{
+  font-weight: 900;
+  font-size: 72%;
+  margin-left: 20%;
+  color:black;
+}
+.TT12{
+  font-weight: 900;
+  font-size: 72%;
+  margin-left: 20%;
+  color:black;
+}
+.luan4{
+  position: relative;
+  background-image: linear-gradient( 135deg, #A0FE65 10%, #FA016D 100%);
+  width: 49px;
+  height: 200px;
+  border-top-left-radius:10px ;
+  border-top-right-radius:10px ;
+  position: absolute;
+  top: 44px;
+  left: 15px;
+  transition: 0.5s;
+  background-size: 200% auto;           
+  display: block;
+  color: white;
+}
+.luan4:hover {
+  background-position: bottom center;
+  color: #fff;
+  text-decoration: none;
+  color: black;
+}
+.TT13{
+  font-size: 80%;
+  font-weight: 900;
+  position: absolute;
+  top: 100px;
+  left: 5px;
+}
+
+.luan5{
+  position: relative;
+  background-image: linear-gradient( 135deg, #FFDB01 10%, #0E197D 100%);
+  width: 49px;
+  height: 180px;
+  border-top-left-radius:10px ;
+  border-top-right-radius:10px ;
+  position: absolute;
+  top: 64px;
+  left: 80px;
+  transition: 0.5s;
+  background-size: 200% auto;           
+  display: block;
+  color: white;
+}
+.luan5:hover {
+  background-position: bottom center;
+  color: #fff;
+  text-decoration: none;
+  color: black;
+}
+.TT14{
+  font-size: 80%;
+  font-weight: 900;
+  position: absolute;
+  top: 81px;
+  left: 5px;
+}
+.luan6{
+  position: relative;
+  background-image: linear-gradient( 135deg, #EECE13 10%, #B210FF 100%);
+  width: 49px;
+  height: 160px;
+  border-top-left-radius:10px ;
+  border-top-right-radius:10px ;
+  position: absolute;
+  top: 84px;
+  left: 148px;
+  transition: 0.5s;
+  background-size: 200% auto;           
+  display: block;
+  color: white;
+}
+.luan6:hover {
+  background-position: bottom center;
+  color: #fff;
+  text-decoration: none;
+  color: black;
+}
+.TT15{
+  font-size: 80%;
+  font-weight: 900;
+  position: absolute;
+  top: 62px;
+  left: 2.5px;
+}
+.luan7{
+  position: relative;
+  background-image: linear-gradient( 135deg, #FFCF71 10%, #2376DD 100%);
+  width: 49px;
+  height: 140px;
+  border-top-left-radius:10px ;
+  border-top-right-radius:10px ;
+  position: absolute;
+  top: 104px;
+  left: 210px;
+  transition: 0.5s;
+  background-size: 200% auto;           
+  display: block;
+  color: white;
+}
+.luan7:hover {
+  background-position: bottom center;
+  color: #fff;
+  text-decoration: none;
+  color: black;
+}
+.TT16{
+  font-size: 80%;
+  font-weight: 900;
+  position: absolute;
+  top: 42px;
+  left: 2.5px;
+}
+/***********************************/
+.music-section{
+  position: relative;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  width: 100%;
+  height: 500px;
+  margin-top: -1cm;
+}
+.TT-music{
+  width: 900px;
+  height: 300px;
+  background-color: white;
+  overflow-y: scroll;
+  position: absolute;
+  top: 110px;
+  left: 48px;
+  border-radius: 9px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow-x: hidden;
+}
+.TT-music::-webkit-scrollbar {
+	width: 10px;
+	background-color: white;
+  border-radius: 10px;
+}
+.TT-music::-webkit-scrollbar-thumb {
+	background-color: lightgray;
+	border-radius: 4px;
+
+}
+.main-bottom {
+  margin-top: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 10px;
+  padding: 0px 20px 20px 20px;
+}
+
+.main-bottom .tab {
+  background: white;
+  padding: 20px;
+}
+
+.main-bottom .tab-2 {
+  margin-left: 20px
+}
+
+.tab_title {
+  padding-bottom: 20px;
+}
+
+.main-bottom .tab table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.main-bottom .tab table tr th {
+  text-align: left;
+  font-size: 90%;
+  font-weight: 900;
+  color: black;
+  padding-left: 11px;
+  padding-bottom: 25px;
+}
+
+.main-bottom .tab table tr td {
+  padding: 20px 66px 18px 0px;
+  font-size: 90%;
+  color: black;
+  font-weight: 700;
+  padding-left: 11px;
+}
+.main-bottom .tab table tbody tr{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
+
+}
+.main-bottom .tab table tbody tr:hover {
+  background: #03a9f4;
+}
+.TT-music1{
+    border-radius: 9px;
+    width: 300px;
+    height: 300px;
+    background-color:white;
+    position: absolute;
+    top: 110px;
+    left: 962px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.Email2 ,.Email3,.Email4,.Email5, .Email6{
+  font-family: 'Noto Sans JP', sans-serif;
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  width: 260px;
+  height: 48px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  resize: none;
+  padding-top: 11px;
+  padding-left: 14px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  background-color: white;
+  border: none;
+  transition: all 0.4s;
+}
+.Email2 ,.Email3,.Email4,.Email5,.Email6:focus{
+  outline: none;
+}
+.Email2:focus{
+  background-color: black;
+  color: white;
+}
+.Email3:focus{
+  background-color: black;
+  color: white;
+}
+.Email4:focus{
+  background-color: black;
+  color: white;
+}
+.Email5:focus{
+  background-color: black;
+  color: white;
+}
+.Email6:focus{
+  background-color: black;
+  color: white;
+}
+.TT-music2{
+  width: 150px;
+  height: 300px;
+  float: right;
+
+  position: absolute;
+  top: 110px;
+  right: 105px;
+}
+.btn { background-image: linear-gradient(to right, #1c9ab1 0%, #053136  51%, #07c1da  100%);}
+.btn{
+  text-decoration: none;
+  color: white;
+  padding: 15px 10px;
+  border: none;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin: 33px 50px;
+  width: 116px;
+  display: inline-block;
+  text-align: center;
+  font-weight: 900;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 90%;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+.btn:hover {
+   background-position: right center;
+   color: #fff;
+   text-decoration: none;
+   color: black;
+ }
+ /***********************************/
+ .album-section{
+  position: relative;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  width: 100%;
+  height: 500px;
+  margin-top: -1cm;
+}
+.TT-album{
+  width: 900px;
+  height: 300px;
+  background-color: white;
+  overflow-y: scroll;
+  position: absolute;
+  top: 110px;
+  left: 48px;
+  border-radius: 9px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow-x: hidden;
+}
+.TT-album::-webkit-scrollbar {
+	width: 10px;
+	background-color: white;
+  border-radius: 10px;
+}
+.TT-album::-webkit-scrollbar-thumb {
+	background-color: lightgray;
+	border-radius: 4px;
+
+}
+.main-bottom1 {
+  margin-top: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 10px;
+  padding: 0px 20px 20px 20px;
+}
+
+.main-bottom1 .tab {
+  background: white;
+  padding: 20px;
+}
+
+.main-bottom1 .tab-2 {
+  margin-left: 20px
+}
+
+.tab_title {
+  padding-bottom: 20px;
+}
+
+.main-bottom1 .tab table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.main-bottom1 .tab table tr th {
+  text-align: left;
+  font-size: 90%;
+  font-weight: 900;
+  color: black;
+  padding-left: 6px;
+  padding-bottom: 25px;
+}
+
+.main-bottom1 .tab table tr td {
+  padding: 20px 76px 18px 0px;
+  font-size: 90%;
+  color: black;
+  font-weight: 700;
+  padding-left: 11px;
+}
+.main-bottom1 .tab table tbody tr{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
+
+}
+.main-bottom1 .tab table tbody tr:hover {
+  background: #03a9f4;
+}
+.TT-album1{
+    border-radius: 9px;
+    width: 300px;
+    height: 300px;
+    background-color:white;
+    position: absolute;
+    top: 110px;
+    left: 962px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.Email7 ,.Email8,.Email9,.Email10, .Email11{
+  font-family: 'Noto Sans JP', sans-serif;
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  width: 260px;
+  height: 48px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  resize: none;
+  padding-top: 11px;
+  padding-left: 14px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  background-color: white;
+  border: none;
+  transition: all 0.4s;
+}
+.Email7 ,.Email8,.Email9,.Email10,.Email11:focus{
+  outline: none;
+}
+.Email7:focus{
+  background-color: black;
+  color: white;
+}
+.Email8:focus{
+  background-color: black;
+  color: white;
+}
+.Email9:focus{
+  background-color: black;
+  color: white;
+}
+.Email11:focus{
+  background-color: black;
+  color: white;
+}
+.Email10:focus{
+  background-color: black;
+  color: white;
+}
+.TT-album2{
+  width: 150px;
+  height: 300px;
+  float: right;
+
+  position: absolute;
+  top: 110px;
+  right: 105px;
+}
+.btn1 { background-image: linear-gradient(to right, #1c9ab1 0%, #053136  51%, #07c1da  100%);}
+.btn1{
+  text-decoration: none;
+  color: white;
+  padding: 15px 10px;
+  margin: 33px 50px;
+  width: 116px;
+  display: inline-block;
+  text-align: center;
+  font-weight: 900;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 90%;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+.btn1:hover {
+   background-position: right center;
+   color: #fff;
+   text-decoration: none;
+   color: black;
+ }
+ /***********************************************/
+ .kind-section{
+  position: relative;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  width: 100%;
+  height: 500px;
+  margin-top: -1cm;
+}
+.TT-kind{
+  width: 900px;
+  height: 300px;
+  background-color: white;
+  overflow-y: scroll;
+  position: absolute;
+  top: 110px;
+  left: 48px;
+  border-radius: 9px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow-x: hidden;
+}
+.TT-kind::-webkit-scrollbar {
+	width: 10px;
+	background-color: white;
+  border-radius: 10px;
+}
+.TT-kind::-webkit-scrollbar-thumb {
+	background-color: lightgray;
+	border-radius: 4px;
+
+}
+.main-bottom2 {
+  margin-top: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 10px;
+  padding: 0px 20px 20px 20px;
+}
+
+.main-bottom2 .tab {
+  background: white;
+  padding: 20px;
+}
+
+.main-bottom2 .tab-2 {
+  margin-left: 20px
+}
+
+.tab_title {
+  padding-bottom: 20px;
+}
+
+.main-bottom2 .tab table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.main-bottom2 .tab table tr th {
+  text-align: left;
+  font-size: 90%;
+  font-weight: 900;
+  color: black;
+  padding-left: 12px;
+  padding-bottom: 25px;
+}
+
+.main-bottom2 .tab table tr td {
+  padding: 20px 110px 18px 0px;
+  font-size: 90%;
+  color: black;
+  font-weight: 700;
+  padding-left: 11px;
+}
+.main-bottom2 .tab table tbody tr{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
+
+}
+.main-bottom2 .tab table tbody tr:hover {
+  background: #03a9f4;
+}
+.TT-kind1{
+    border-radius: 9px;
+    width: 300px;
+    height: 300px;
+    background-color:white;
+    position: absolute;
+    top: 110px;
+    left: 962px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.Email12 ,.Email13,.Email14,.Email15{
+  font-family: 'Noto Sans JP', sans-serif;
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  width: 260px;
+  height: 62px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  resize: none;
+  padding-top: 11px;
+  padding-left: 14px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  background-color: white;
+  border: none;
+  transition: all 0.4s;
+}
+.Email12 ,.Email13,.Email14,.Email15:focus{
+  outline: none;
+}
+.Email12:focus{
+  background-color: black;
+  color: white;
+}
+.Email13:focus{
+  background-color: black;
+  color: white;
+}
+.Email14:focus{
+  background-color: black;
+  color: white;
+}
+.Email15:focus{
+  background-color: black;
+  color: white;
+}
+
+.TT-kind2{
+  width: 150px;
+  height: 300px;
+  float: right;
+
+  position: absolute;
+  top: 110px;
+  right: 105px;
+}
+.btn2 { background-image: linear-gradient(to right, #1c9ab1 0%, #053136  51%, #07c1da  100%);}
+.btn2{
+  text-decoration: none;
+  color: white;
+  padding: 15px 10px;
+  margin: 33px 50px;
+  width: 116px;
+  display: inline-block;
+  text-align: center;
+  font-weight: 900;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 90%;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+.btn2:hover {
+   background-position: right center;
+   color: #fff;
+   text-decoration: none;
+   color: black;
+ }
+ /***************************************/
+ .artist-section{
+  position: relative;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  width: 100%;
+  height: 500px;
+  margin-top: -1cm;
+}
+.TT-artist{
+  width: 900px;
+  height: 300px;
+  background-color: white;
+  overflow-y: scroll;
+  position: absolute;
+  top: 110px;
+  left: 48px;
+  border-radius: 9px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow-x: hidden;
+}
+.TT-artist::-webkit-scrollbar {
+	width: 10px;
+	background-color: white;
+  border-radius: 10px;
+}
+.TT-artist::-webkit-scrollbar-thumb {
+	background-color: lightgray;
+	border-radius: 4px;
+
+}
+.main-bottom3 {
+  margin-top: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 10px;
+  padding: 0px 20px 20px 20px;
+}
+
+.main-bottom3 .tab {
+  background: white;
+  padding: 20px;
+}
+
+.main-bottom3 .tab-2 {
+  margin-left: 20px
+}
+
+.tab_title {
+  padding-bottom: 20px;
+}
+
+.main-bottom3 .tab table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.main-bottom3 .tab table tr th {
+  text-align: left;
+  font-size: 90%;
+  font-weight: 900;
+  color: black;
+  padding-left: 12px;
+  padding-bottom: 25px;
+}
+
+.main-bottom3 .tab table tr td {
+  padding: 20px 148px 18px 0px;
+  font-size: 90%;
+  color: black;
+  font-weight: 700;
+  padding-left: 11px;
+}
+.main-bottom3 .tab table tbody tr{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
+
+}
+.main-bottom3 .tab table tbody tr:hover {
+  background: #03a9f4;
+}
+.TT-artist1{
+    border-radius: 9px;
+    width: 300px;
+    height: 300px;
+    background-color:white;
+    position: absolute;
+    top: 110px;
+    left: 962px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.Email16 ,.Email17,.Email18,.Email19{
+  font-family: 'Noto Sans JP', sans-serif;
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  width: 260px;
+  height: 62px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  resize: none;
+  padding-top: 11px;
+  padding-left: 14px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  background-color: white;
+  border: none;
+  transition: all 0.4s;
+}
+.Email16 ,.Email17,.Email18,.Email19:focus{
+  outline: none;
+}
+.Email16:focus{
+  background-color: black;
+  color: white;
+}
+.Email17:focus{
+  background-color: black;
+  color: white;
+}
+.Email18:focus{
+  background-color: black;
+  color: white;
+}
+.Email19:focus{
+  background-color: black;
+  color: white;
+}
+
+.TT-artist2{
+  width: 150px;
+  height: 300px;
+  float: right;
+
+  position: absolute;
+  top: 110px;
+  right: 105px;
+}
+.btn3 { background-image: linear-gradient(to right, #1c9ab1 0%, #053136  51%, #07c1da  100%);}
+.btn3{
+  text-decoration: none;
+  color: white;
+  padding: 15px 10px;
+  margin: 33px 50px;
+  width: 116px;
+  display: inline-block;
+  text-align: center;
+  font-weight: 900;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 90%;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+.btn3:hover {
+   background-position: right center;
+   color: #fff;
+   text-decoration: none;
+   color: black;
+ }
+ /***************************************/
+ .tacgia-section{
+  position: relative;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  width: 100%;
+  height: 500px;
+  margin-top: -1cm;
+}
+.TT-tacgia{
+  width: 900px;
+  height: 300px;
+  background-color: white;
+  overflow-y: scroll;
+  position: absolute;
+  top: 110px;
+  left: 48px;
+  border-radius: 9px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow-x: hidden;
+}
+.TT-tacgia::-webkit-scrollbar {
+	width: 10px;
+	background-color: white;
+  border-radius: 10px;
+}
+.TT-tacgia::-webkit-scrollbar-thumb {
+	background-color: lightgray;
+	border-radius: 4px;
+
+}
+.main-bottom4 {
+  margin-top: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 10px;
+  padding: 0px 20px 20px 20px;
+}
+
+.main-bottom4 .tab {
+  background: white;
+  padding: 20px;
+}
+
+.main-bottom4 .tab-2 {
+  margin-left: 20px
+}
+
+.tab_title {
+  padding-bottom: 20px;
+}
+
+.main-bottom4 .tab table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.main-bottom4 .tab table tr th {
+  text-align: left;
+  font-size: 90%;
+  font-weight: 900;
+  color: black;
+  padding-left: 12px;
+  padding-bottom: 25px;
+}
+
+.main-bottom4 .tab table tr td {
+  padding: 20px 148px 18px 0px;
+  font-size: 90%;
+  color: black;
+  font-weight: 700;
+  padding-left: 11px;
+}
+.main-bottom4 .tab table tbody tr{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
+
+}
+.main-bottom4 .tab table tbody tr:hover {
+  background: #03a9f4;
+}
+.TT-tacgia1{
+    border-radius: 9px;
+    width: 300px;
+    height: 300px;
+    background-color:white;
+    position: absolute;
+    top: 110px;
+    left: 962px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.Email20 ,.Email21,.Email22,.Email23{
+  font-family: 'Noto Sans JP', sans-serif;
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  width: 260px;
+  height: 62px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  resize: none;
+  padding-top: 11px;
+  padding-left: 14px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  background-color: white;
+  border: none;
+  transition: all 0.4s;
+}
+.Email20 ,.Email21,.Email22,.Email23:focus{
+  outline: none;
+}
+.Email20:focus{
+  background-color: black;
+  color: white;
+}
+.Email21:focus{
+  background-color: black;
+  color: white;
+}
+.Email22:focus{
+  background-color: black;
+  color: white;
+}
+.Email23:focus{
+  background-color: black;
+  color: white;
+}
+
+.TT-tacgia2{
+  width: 150px;
+  height: 300px;
+  float: right;
+
+  position: absolute;
+  top: 110px;
+  right: 105px;
+}
+.btn4 { background-image: linear-gradient(to right, #1c9ab1 0%, #053136  51%, #07c1da  100%);}
+.btn4{
+  text-decoration: none;
+  color: white;
+  padding: 15px 10px;
+  margin: 33px 50px;
+  width: 116px;
+  display: inline-block;
+  text-align: center;
+  font-weight: 900;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 90%;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+.btn4:hover {
+   background-position: right center;
+   color: #fff;
+   text-decoration: none;
+   color: black;
+ }
+  /***************************************/
+  .nguoidung-section{
+    position: relative;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    width: 100%;
+    height: 735px;
+    margin-top: -1cm;
+  }
+  .TT-nguoidung{
+    width: 1423px;
+    height: 400px;
+    background-color: white;
+    overflow-y: scroll;
+    position: absolute;
+    top: 110px;
+    left: 48px;
+    border-radius: 9px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow-x: hidden;
+  }
+  .TT-nguoidung::-webkit-scrollbar {
+    width: 10px;
+    background-color: white;
+    border-radius: 10px;
+  }
+  .TT-nguoidung::-webkit-scrollbar-thumb {
+    background-color: lightgray;
+    border-radius: 4px;
+  
+  }
+  .main-bottom5 {
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+    padding: 0px 20px 20px 20px;
+  }
+  
+  .main-bottom5 .tab {
+    background: white;
+    padding: 20px;
+  }
+  
+  .main-bottom5 .tab-2 {
+    margin-left: 20px
+  }
+  
+  .tab_title {
+    padding-bottom: 20px;
+  }
+  
+  .main-bottom5 .tab table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .main-bottom5 .tab table tr th {
+    text-align: left;
+    font-size: 90%;
+    font-weight: 900;
+    color: black;
+    padding-left: 12px;
+    padding-bottom: 25px;
+  }
+  
+  .main-bottom5 .tab table tr td {
+    padding: 20px 107px 18px 0px;
+    font-size: 63%;
+    color: black;
+    font-weight: 700;
+    padding-left: 11px;
+  }
+  .main-bottom5 .tab table tbody tr{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+  
+  }
+  .main-bottom5 .tab table tbody tr:hover {
+    background: #03a9f4;
+  }
+  .TT-nguoidung1{
+      border-radius: 9px;
+      width: 1424px;
+      height: 82px;
+      background-color:white;
+      position: absolute;
+      top: 520px;
+      left: 48px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .Email24 ,.Email25,.Email26,.Email27,.Email28,.Email29,.Email30{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    width: 194px;
+    height: 62px;
+    margin-top: 10px;
+    border-radius: 4px;
+    margin-left: 4.5px;
+    resize: none;
+    padding-top: 11px;
+    padding-left: 14px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    background-color: white;
+    border: none;
+    transition: all 0.4s;
+  }
+  .Email24 ,.Email25,.Email26,.Email27,.Email28,.Email29,.Email30:focus{
+    outline: none;
+  }
+  .Email24:focus{
+    background-color: black;
+    color: white;
+  }
+  .Email25:focus{
+    background-color: black;
+    color: white;
+  }
+  .Email26:focus{
+    background-color: black;
+    color: white;
+  }
+  .Email27:focus{
+    background-color: black;
+    color: white;
+  }
+  .Email28:focus{
+    background-color: black;
+    color: white;
+  }
+  .Email29:focus{
+    background-color: black;
+    color: white;
+  }
+  .Email30:focus{
+    background-color: black;
+    color: white;
+  }
+  
+  .TT-nguoidung2{
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    top: 610px;
+    left: 555px;
+  }
+  .btn5 { background-image: linear-gradient(to right, #1c9ab1 0%, #053136  51%, #07c1da  100%);}
+  .btn5{
+    text-decoration: none;
+    border: none;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: white;
+    padding: 15px 10px;
+    width: 116px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 900;
+    font-size: 90%;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    margin-left: 13px;
+    margin-top: 10px;
+}
+  .btn5:hover {
+     background-position: right center;
+     color: #fff;
+     text-decoration: none;
+     color: black;
+   }
+   /***************************************/
+   footer{
+    height: 530.4px;
+    background-color: black;
+    padding: 40px 0 50px;
+  }
+  .A6{
+    width: 132px;
+    margin: 0;
+    margin-top: -1cm;
+  }
+  .about-end{
+    width: 195px;
+    height: 346px;
+  }
+  .TTLUAN{
+    color: white;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #919496;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.4;
+    margin-top: 0.5cm;
+  }
+  .about-end p{
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    color: white;
+    transition: all 0.2s;
+  }
+  .about-end p:hover,
+  .about-end p:active{
+    color: #5680E9;
+  }
+  .TTL1,.TTL2,.TTL,.TTL3,.TTL4,.TTL5,.TTL6,.TTL7,.TTL8,.TTL9,.TTL10{
+    margin-top: 0.8cm;
+  }
+  .social-icons{
+    margin-top: 15px;
+    list-style: none;
+  }
+  .social-icons a{
+    text-decoration: none;
+  }
+  .social-icons li{
+    display: inline-block;
+    font-size: 200%;
+    margin-left: 20px;
+    color: white;
+  }
+  .social-icons li i{
+    transition: all 0.15s;
+  }
+  .social-icons li i:hover,
+  .social-icons li i:active{
+    transform: scale(1.3);
+    color: #5680E9;
+  }
+  .end1{
+    width: 1170px;
+    height: 39.2px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .menu1{
+    list-style: none; 
+    margin-left: 20px;
+  }
+  .menu1 li a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    transition:all 0.2s ease-in-out;
+    padding: 3px 0;
+  }
+  .menu1 li{
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .menu1 li a:hover,
+  .menu1 li a:active{
+    color:#5680E9 ;
+  }
+  .TT23,span{
+    float: right;
+    font-size: 14px;
+    color: white;
+  }
+  .TT23{
+    margin-top: -16px;
+    margin-right: 50px;
+  }

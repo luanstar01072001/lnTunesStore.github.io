@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LN*Tunes Store</title>
+    <link rel="stylesheet" href="Listen.css">
+    <!--font-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel=<link rel="preconnect"
+        href="https://fonts.gstatic.com">
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@1,700&display=swap"
+        rel="stylesheet">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../verdors/css/grid.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;500&display=swap" rel="stylesheet">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--Favicon-->
+</head>
+<!-- <script type='text/javascript'>
+    //<![CDATA[
+    //Ctrl+U
+    shortcut = { all_shortcuts: {}, add: function (a, b, c) { var d = { type: "keydown", propagate: !1, disable_in_input: !1, target: document, keycode: !1 }; if (c) for (var e in d) "undefined" == typeof c[e] && (c[e] = d[e]); else c = d; d = c.target, "string" == typeof c.target && (d = document.getElementById(c.target)), a = a.toLowerCase(), e = function (d) { d = d || window.event; if (c.disable_in_input) { var e; d.target ? e = d.target : d.srcElement && (e = d.srcElement), 3 == e.nodeType && (e = e.parentNode); if ("INPUT" == e.tagName || "TEXTAREA" == e.tagName) return } d.keyCode ? code = d.keyCode : d.which && (code = d.which), e = String.fromCharCode(code).toLowerCase(), 188 == code && (e = ","), 190 == code && (e = "."); var f = a.split("+"), g = 0, h = { "`": "~", 1: "!", 2: "@", 3: "#", 4: "$", 5: "%", 6: "^", 7: "&", 8: "*", 9: "(", 0: ")", "-": "_", "=": "+", ";": ":", "'": '"', ",": "<", ".": ">", "/": "?", "\\": "|" }, i = { esc: 27, escape: 27, tab: 9, space: 32, "return": 13, enter: 13, backspace: 8, scrolllock: 145, scroll_lock: 145, scroll: 145, capslock: 20, caps_lock: 20, caps: 20, numlock: 144, num_lock: 144, num: 144, pause: 19, "break": 19, insert: 45, home: 36, "delete": 46, end: 35, pageup: 33, page_up: 33, pu: 33, pagedown: 34, page_down: 34, pd: 34, left: 37, up: 38, right: 39, down: 40, f1: 112, f2: 113, f3: 114, f4: 115, f5: 116, f6: 117, f7: 118, f8: 119, f9: 120, f10: 121, f11: 122, f12: 123 }, j = !1, l = !1, m = !1, n = !1, o = !1, p = !1, q = !1, r = !1; d.ctrlKey && (n = !0), d.shiftKey && (l = !0), d.altKey && (p = !0), d.metaKey && (r = !0); for (var s = 0; k = f[s], s < f.length; s++)"ctrl" == k || "control" == k ? (g++, m = !0) : "shift" == k ? (g++, j = !0) : "alt" == k ? (g++, o = !0) : "meta" == k ? (g++, q = !0) : 1 < k.length ? i[k] == code && g++ : c.keycode ? c.keycode == code && g++ : e == k ? g++ : h[e] && d.shiftKey && (e = h[e], e == k && g++); if (g == f.length && n == m && l == j && p == o && r == q && (b(d), !c.propagate)) return d.cancelBubble = !0, d.returnValue = !1, d.stopPropagation && (d.stopPropagation(), d.preventDefault()), !1 }, this.all_shortcuts[a] = { callback: e, target: d, event: c.type }, d.addEventListener ? d.addEventListener(c.type, e, !1) : d.attachEvent ? d.attachEvent("on" + c.type, e) : d["on" + c.type] = e }, remove: function (a) { var a = a.toLowerCase(), b = this.all_shortcuts[a]; delete this.all_shortcuts[a]; if (b) { var a = b.event, c = b.target, b = b.callback; c.detachEvent ? c.detachEvent("on" + a, b) : c.removeEventListener ? c.removeEventListener(a, b, !1) : c["on" + a] = !1 } } }, shortcut.add("Ctrl+U", function () { top.location.href = "/" });
+    //]]>
+</script>
+<script language=JavaScript>
+    //
+    var message = "Bản Quyền Thuộc Về LN*Tunes Store";
+    ///////////////////////////////////
+    function clickIE() { if (document.all) { (message); return false; } }
+    function clickNS(e) {
+        if
+            (document.layers || (document.getElementById && !document.all)) {
+            if (e.which == 2 || e.which == 3) { (message); return false; }
+        }
+    }
+    if (document.layers) { document.captureEvents(Event.MOUSEDOWN); document.onmousedown = clickNS; }
+    else { document.onmouseup = clickNS; document.oncontextmenu = clickIE; }
+    document.oncontextmenu = new Function("return false")
+    // -->
+<!-- </script> -->
+
+<body>
+    <div class="LN">
+        <ul class="menu">
+            <li><i class="fas fa-home ico"><a href="./luanngo.html">Home</a></i></li>
+            <li><i class="fas fa-search ico"><a href="#">Search</a></i></li>
+            <li><i class="fas fa-play-circle ico"><a href="#">Your Music</a></i></li>
+            <li><i class="fas fa-compact-disc ico"><a href="#">Library</a></i></li>
+            <li><i class="fas fa-user-plus ico"><a href="./Sign up/signup.html">Sign Up</a></i></li>
+            <li><i class="fas fa-sign-in-alt ico"><a href="./LogIn/login.html">Log In</a></i></li>
+            <li><i class="fas fa-level-down-alt ico"><a href="#">Download</a></i></li>
+        </ul>
+        <a href="../luanngo.html"><img class="Logo" src="../resources/img/LNTunes Store2.png" alt=""></a>
+    </div>
+    <section class="p1">
+        <h2 class="TT">Good Afternoon</h2>
+        <form class="phan1-section">
+            <div class="col span-1-of-4 phandau">
+                <img class="A1" src="../Infomation Img/LOGO.png" alt="">
+                <p class="TTAN">Song Liked</p>
+            </div>
+            <div class="col span-1-of-4 phandau">
+                <img class="A1" src="../Infomation Img/Adios - Everglow.png" alt="">
+                <p class="TTAN1">Adios <br> Everglow</p>
+                <audio id="AN1" src="../resources/music/Adios - Everglow.mp3"></audio>
+                <div>
+                    <img src="../Infomation Img/1.png" class="A1AN1" onclick="document.getElementById('AN1').play()">
+                    <img src="../Infomation Img/2.png" class="A2AN1" onclick="document.getElementById('AN1').pause()">
+                </div>
+            </div>
+            <div class="col span-1-of-4 phandau">
+                <img class="A1" src="../Infomation Img/Gravity - Tae Yeon.png" alt="">
+                <p class="TTAN1">Gravity <br> TaeYeon</p>
+                <audio id="AN2" src="../resources/music/Gravity - Tae Yeon.mp3"></audio>
+                <div>
+                    <img src="../Infomation Img/1.png" class="A1AN1" onclick="document.getElementById('AN2').play()">
+                    <img src="../Infomation Img/2.png" class="A2AN1" onclick="document.getElementById('AN2').pause()">
+                </div>
+            </div>
+            <div class="col span-1-of-4 phandau">
+                <img class="A1" src="../Infomation Img/Bad Boy - Red Velvet.png" alt="">
+                <p class="TTAN1">Bad Boy <br> Red Velvet</p>
+                <audio id="AN3" src="../resources/music/Bad Boy - Red Velvet.mp3"></audio>
+                <div>
+                    <img src="../Infomation Img/1.png" class="A1AN1" onclick="document.getElementById('AN3').play()">
+                    <img src="../Infomation Img/2.png" class="A2AN1" onclick="document.getElementById('AN3').pause()">
+                </div>
+            </div>
+        </form>
+        <form class="phan2-section">
+            <div class="col span-1-of-4 phandau1">
+                <img class="A1" src="../Infomation Img/BlackPink.jpg" alt="">
+                <p class="TTAN">Black Pink</p>
+            </div>
+            <div class="col span-1-of-4 phandau1">
+                <img class="A1" src="../Infomation Img/Next Level - Aespa.png" alt="">
+                <p class="TTAN1">Next Level <br> Aespa</p>
+                <audio id="AN4" src="../resources/music/Next Level - aespa.mp3"></audio>
+                <div>
+                    <img src="../Infomation Img/1.png" class="A1AN1" onclick="document.getElementById('AN4').play()">
+                    <img src="../Infomation Img/2.png" class="A2AN1" onclick="document.getElementById('AN4').pause()">
+                </div>
+            </div>
+            <div class="col span-1-of-4 phandau1">
+                <img class="A1" src="../Infomation Img/Remember Me (Hotel Del Luna OST) - Gummy.png" alt="">
+                <p class="TTAN1">Remember Me <br> Gummy</p>
+                <audio id="AN5" src="../resources/music/Remember Me (Hotel Del Luna OST) - Gummy.mp3"></audio>
+                <div>
+                    <img src="../Infomation Img/1.png" class="A1AN1" onclick="document.getElementById('AN5').play()">
+                    <img src="../Infomation Img/2.png" class="A2AN1" onclick="document.getElementById('AN5').pause()">
+                </div>
+            </div>
+            <div class="col span-1-of-4 phandau1">
+                <img class="A1" src="../Infomation Img/The Morass - Lee Yejoon.png" alt="">
+                <p class="TTAN1">The Morass <br> Lee Yejoon</p>
+                <audio id="AN6" src="../resources/music/The Morass (Penthouse 2 Ost) - Lee Ye Joon.mp3"></audio>
+                <div>
+                    <img src="../Infomation Img/1.png" class="A1AN1" onclick="document.getElementById('AN6').play()">
+                    <img src="../Infomation Img/2.png" class="A2AN1" onclick="document.getElementById('AN6').pause()">
+                </div>
+            </div>
+        </form>
+        <h2 class="TT1">Behind The Stories</h2>
+        <form class="phan3-section">
+            <div class="col span-1-of-6 phandau2">
+                <img class="A2" src="../Infomation Img/BlackPink.jpg" alt="">
+                <p class="TTAN2">The Morass <br> Lee Yejoon</p>
+            </div>
+            <div class="col span-1-of-6 phandau2">
+                <img class="A2" src="../Infomation Img/Celebrity-IU.png" alt="">
+                <p class="TTAN2">Celebrity <br> IU</p>
+                <audio id="AN8" src="../resources/music/Celebrity - IU.mp3"></audio>
+                <div>
+                    <img src="../Infomation Img/1.png" class="A1AN2" onclick="document.getElementById('AN8').play()">
+                    <img src="../Infomation Img/2.png" class="A2AN2" onclick="document.getElementById('AN8').pause()">
+                </div>
+            </div>
+            <div class="col span-1-of-6 phandau2">
+                <img class="A2" src="../Infomation Img/Remember Me (Hotel Del Luna OST) - Gummy.png" alt="">
+                <p class="TTAN2">Remember Me <br> Gummy</p>
+                <audio id="AN5" src="../resources/music/Remember Me (Hotel Del Luna OST) - Gummy.mp3"></audio>
+                <div>
+                    <img src="../Infomation Img/1.png" class="A1AN1" onclick="document.getElementById('AN5').play()">
+                    <img src="../Infomation Img/2.png" class="A2AN1" onclick="document.getElementById('AN5').pause()">
+                </div>
+            </div>
+            <div class="col span-1-of-6 phandau2">
+                <img class="A2" src="../Infomation Img/The Morass - Lee Yejoon.png" alt="">
+                <p class="TTAN2">The Morass <br> Lee Yejoon</p>
+                <audio id="AN6" src="../resources/music/The Morass (Penthouse 2 Ost) - Lee Ye Joon.mp3"></audio>
+                <div>
+                    <img src="../Infomation Img/1.png" class="A1AN1" onclick="document.getElementById('AN6').play()">
+                    <img src="../Infomation Img/2.png" class="A2AN1" onclick="document.getElementById('AN6').pause()">
+                </div>
+            </div>
+            <div class="col span-1-of-6 phandau2">
+                <img class="A2" src="../Infomation Img/The Morass - Lee Yejoon.png" alt="">
+                <p class="TTAN2">The Morass <br> Lee Yejoon</p>
+                <audio id="AN6" src="../resources/music/The Morass (Penthouse 2 Ost) - Lee Ye Joon.mp3"></audio>
+                <div>
+                    <img src="../Infomation Img/1.png" class="A1AN1" onclick="document.getElementById('AN6').play()">
+                    <img src="../Infomation Img/2.png" class="A2AN1" onclick="document.getElementById('AN6').pause()">
+                </div>
+            </div>
+               <div class="col span-1-of-6 phandau2">
+                <img class="A2" src="../Infomation Img/The Morass - Lee Yejoon.png" alt="">
+                <p class="TTAN2">The Morass <br> Lee Yejoon</p>
+                <audio id="AN6" src="../resources/music/The Morass (Penthouse 2 Ost) - Lee Ye Joon.mp3"></audio>
+                <div>
+                    <img src="../Infomation Img/1.png" class="A1AN1" onclick="document.getElementById('AN6').play()">
+                    <img src="../Infomation Img/2.png" class="A2AN1" onclick="document.getElementById('AN6').pause()">
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+</html>

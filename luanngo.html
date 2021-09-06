@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LN*Tunes Store - Home</title>
+    <!--css-->
+    <link rel="stylesheet" href="resources/css/luanngo.css">
+    <!--css-->
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;500&display=swap" rel="stylesheet">
+    <!--font-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@1,700&display=swap"
+        rel="stylesheet">
+    <!--font-->
+    <link rel="stylesheet" href="./verdors/css/grid.css">
+    <link rel="stylesheet" href="./resources/css/luanngo1.css">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--Favicon-->
+
+</head>
+<script type='text/javascript'>
+    //<![CDATA[
+    //Ctrl+U
+    shortcut = { all_shortcuts: {}, add: function (a, b, c) { var d = { type: "keydown", propagate: !1, disable_in_input: !1, target: document, keycode: !1 }; if (c) for (var e in d) "undefined" == typeof c[e] && (c[e] = d[e]); else c = d; d = c.target, "string" == typeof c.target && (d = document.getElementById(c.target)), a = a.toLowerCase(), e = function (d) { d = d || window.event; if (c.disable_in_input) { var e; d.target ? e = d.target : d.srcElement && (e = d.srcElement), 3 == e.nodeType && (e = e.parentNode); if ("INPUT" == e.tagName || "TEXTAREA" == e.tagName) return } d.keyCode ? code = d.keyCode : d.which && (code = d.which), e = String.fromCharCode(code).toLowerCase(), 188 == code && (e = ","), 190 == code && (e = "."); var f = a.split("+"), g = 0, h = { "`": "~", 1: "!", 2: "@", 3: "#", 4: "$", 5: "%", 6: "^", 7: "&", 8: "*", 9: "(", 0: ")", "-": "_", "=": "+", ";": ":", "'": '"', ",": "<", ".": ">", "/": "?", "\\": "|" }, i = { esc: 27, escape: 27, tab: 9, space: 32, "return": 13, enter: 13, backspace: 8, scrolllock: 145, scroll_lock: 145, scroll: 145, capslock: 20, caps_lock: 20, caps: 20, numlock: 144, num_lock: 144, num: 144, pause: 19, "break": 19, insert: 45, home: 36, "delete": 46, end: 35, pageup: 33, page_up: 33, pu: 33, pagedown: 34, page_down: 34, pd: 34, left: 37, up: 38, right: 39, down: 40, f1: 112, f2: 113, f3: 114, f4: 115, f5: 116, f6: 117, f7: 118, f8: 119, f9: 120, f10: 121, f11: 122, f12: 123 }, j = !1, l = !1, m = !1, n = !1, o = !1, p = !1, q = !1, r = !1; d.ctrlKey && (n = !0), d.shiftKey && (l = !0), d.altKey && (p = !0), d.metaKey && (r = !0); for (var s = 0; k = f[s], s < f.length; s++)"ctrl" == k || "control" == k ? (g++, m = !0) : "shift" == k ? (g++, j = !0) : "alt" == k ? (g++, o = !0) : "meta" == k ? (g++, q = !0) : 1 < k.length ? i[k] == code && g++ : c.keycode ? c.keycode == code && g++ : e == k ? g++ : h[e] && d.shiftKey && (e = h[e], e == k && g++); if (g == f.length && n == m && l == j && p == o && r == q && (b(d), !c.propagate)) return d.cancelBubble = !0, d.returnValue = !1, d.stopPropagation && (d.stopPropagation(), d.preventDefault()), !1 }, this.all_shortcuts[a] = { callback: e, target: d, event: c.type }, d.addEventListener ? d.addEventListener(c.type, e, !1) : d.attachEvent ? d.attachEvent("on" + c.type, e) : d["on" + c.type] = e }, remove: function (a) { var a = a.toLowerCase(), b = this.all_shortcuts[a]; delete this.all_shortcuts[a]; if (b) { var a = b.event, c = b.target, b = b.callback; c.detachEvent ? c.detachEvent("on" + a, b) : c.removeEventListener ? c.removeEventListener(a, b, !1) : c["on" + a] = !1 } } }, shortcut.add("Ctrl+U", function () { top.location.href = "/" });
+    //]]>
+</script>
+<script language=JavaScript>
+    // <!--
+    var message = "Bản Quyền Thuộc Về LN*Tunes Store";
+    ///////////////////////////////////
+    function clickIE() { if (document.all) { (message); return false; } }
+    function clickNS(e) {
+        if
+            (document.layers || (document.getElementById && !document.all)) {
+            if (e.which == 2 || e.which == 3) { (message); return false; }
+        }
+    }
+    if (document.layers) { document.captureEvents(Event.MOUSEDOWN); document.onmousedown = clickNS; }
+    else { document.onmouseup = clickNS; document.oncontextmenu = clickIE; }
+    document.oncontextmenu = new Function("return false")
+    // -->
+</script>
+
+<body>
+    <header id="head">
+        <nav class="sticky">
+            <a href="luanngo.html"><img class="Logo" src="./resources/img/Belong9.png" alt="Logo"></a>
+            <ul class="menu">
+                <li><a href="./Premium/premium.html">Premium</a></li>
+                <li><a href="./Support/Support.html">Support</a></li>
+                <li><a href="./Download/download.html">Download</a></li>
+                <li><a>|</a></li>
+                <li><a href="Sign up/signup.html">Sign up</a></li>
+                <li><a href="LogIn/login.html">Log in</a></li>
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
+        <div class="row">
+            <div class="heading">
+                <h1>
+                    Everything you want to <br> listen to is available <br> LN * Tunes Store
+
+                </h1>
+                <a href="#premium" class="btn">Premium </a>
+                <a href="#about" class="btn">Listen</a>
+            </div>
+            <div class="box">
+                <div class="container-1">
+                    <input type="search" id="search" placeholder="Music and more ..." />
+                    <a href="#" class="btn7"><i class="fas fa-search small-icons"></i></li></a>
+                </div>
+            </div>
+    </header>
+    <div>
+        <video class="Vidieodemo" autoplay muted loop>
+            <source src="./resources/vidieo/LN Tunes Store1.mp4">
+        </video>
+    </div>
+    <div class="left">
+        <ul>
+            <li><i class="fas fa-home ico"><a href="./luanngo.html">Home</a></i></li>
+            <li><i class="fas fa-play-circle ico"><a href="#">Your Music</a></i></li>
+            <li><i class="fas fa-compact-disc ico"><a href="#">Library</a></i></li>
+            <li><i class="fab fa-playstation ico"><a href="#"> Playlist</a></i></li>
+            <li><i class="fab fa-cc-discover ico"><a href="#">Discover</a></i></li>
+            <li><i class="fas fa-headset ico"><a href="#end">Contact</a></i></li>
+            <li><i class="fas fa-user-plus ico"><a href="./Sign up/signup.html">Sign Up</a></i></li>
+            <li><i class="fas fa-sign-in-alt ico"><a href="./LogIn/login.html">Log In</a></i></li>
+            <li><i class="fas fa-arrow-circle-down ico"><a href="./Download/download.html">Download</a></i></li>
+        </ul>
+    </div>
+    <section class="about-section" id="about">
+        <div class="row">
+            <h2 class="luan0107">New release</h2>
+            <p class="p-long3">Feel The New Music That Is Constantly Updated On LN*Tunes Store</p>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-4 about-vidieo">
+                <video class="VD1" controls poster="./resources/img/On The Ground _ Rosé.jpg">
+                    <source src="./resources/vidieo/On The Ground - Rosé.mp4">
+                    <track src="./Sub/On The Ground.vtt" label="English" default>
+                    <track src="./Sub/On The Ground1.vtt" label="Vietnamese" default>
+                </video>
+                <p class="vidieo-title">Rosé <br>On The Ground</p>
+                <div class="TTAN1">
+                    <audio class="AN1" src="./resources/music/On The Ground  - Rosé.mp3" controls></audio>
+                    <p class="audio-title">Rosé <br> On The Ground</p>
+                    <img class="luanngo" src="./resources/img/Belong12.png" alt="">
+                </div>
+            </div>
+            <div class="col span-1-of-4 about-vidieo">
+                <video class="VD2" src="./resources/vidieo/ROSÉ - _Gone_ M_V.mp4" controls
+                    poster="./resources/img/LNTunes Store-Gone.png">
+                    <track src="./Sub/Gone.vtt" label="English" default>
+                    <track src="./Sub/Gone1.vtt" label="Vietnamese" default>
+                </video>
+                <p class="vidieo-title">Rosé <br>Gone</p>
+                <div class="TTAN2">
+                    <audio class="AN2" src="./resources/music/Gone-ROSE.mp3" controls></audio>
+                    <p class="audio-title1">Rosé <br> Gone</p>
+                    <img class="luanngo1" src="./resources/img/Belong12.png" alt="">
+                </div>
+            </div>
+            <div class="col span-1-of-4 about-vidieo">
+                <video class="VD3" src="./resources/vidieo/BTS - Life Goes On Official MV.mp4" controls
+                    poster="./resources/img/BTS - Life Goes On Official.jpg">
+                    <track src="./Sub/Life Gose On.vtt" label="English" default>
+                    <track src="./Sub/Life Gose On1.vtt" label="Vietnamese" default>
+                </video>
+                <p class="vidieo-title">BTS <br>Life Goes On</p>
+                <div class="TTAN3">
+                    <audio class="AN3" src="./resources/music/Life Goes On - BTS.mp3" controls></audio>
+                    <p class="audio-title2">BTS-Life Goes On</p>
+                    <img class="luanngo2" src="./resources/img/Belong12.png" alt="">
+                </div>
+            </div>
+            <div class="col span-1-of-4 about-vidieo">
+                <video class="VD4" src="./resources/vidieo/Aespa-Black Mamba MV.mp4" controls
+                    poster="./resources/img/ae 2.jpg">
+                    <track src="./Sub/Black Mamba.vtt" label="English" default>
+                    <track src="./Sub/Black Mamba1.vtt" label="Vietnamese" default>
+                </video>
+                <p class="vidieo-title">Aespa <br>Black Mamba</p>
+                <div class="TTAN4">
+                    <audio class="AN4" src="./resources/music/Black Mamba - aespa.mp3" controls></audio>
+                    <p class="audio-title3">Aespa-Black Mamba</p>
+                    <img class="luanngo3" src="./resources/img/Belong12.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="nghesinam-section" id="nghesinam">
+        <div class="row">
+            <h2>artist of the year 2020</h2>
+            <p class="p-long2">Girl Group</p>
+            <p class="p-long1">Black Pink With " The Album "</p>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-5 about-vidieo1">
+                <div>
+                    <video class="VD5" src="./resources/vidieo/BLACKPINK - _THE ALBUM_ LISA Concept Teaser Video.mp4"
+                        controls poster="./resources/img/1.png"></video>
+                    <p class="title-VD">Lisa</p>
+                </div>
+                <div class="TTAN5">
+                    <audio class="AN5"
+                        src="./resources/music/How You Like That - BlackPink - THE ALBUM - BlackPink - Playlist NhacCuaTui.mp3"
+                        controls></audio>
+                    <p class="title-AN5"> How You Like That</p>
+                    <img class="luanngo5" src="./resources/img/Belong12.png" alt="">
+                </div>
+                <div class="TTAN6">
+                    <audio class="AN6" src="./resources/music/Lovesick Girls - BlackPink.mp3" controls></audio>
+                    <p class="title-AN6">Lovesick Girls</p>
+                    <img class="luanngo6" src="./resources/img/Belong12.png" alt="">
+                </div>
+            </div>
+            <div class="col span-1-of-5 about-vidieo1">
+                <div>
+                    <video class="VD6" src="./resources/vidieo/BLACKPINK - _THE ALBUM_ ROSÉ Concept Teaser Video.mp4"
+                        controls poster="./resources/img/2.png"></video>
+                    <p class="title-VD">Rosé</p>
+                </div>
+                <div class="TTAN7">
+                    <audio class="AN7"
+                        src="./resources/music/Pretty Savage - BlackPink - THE ALBUM - BlackPink - Playlist NhacCuaTui.mp3"
+                        controls></audio>
+                    <p class="title-AN7">Pretty Savage</p>
+                    <img class="luanngo7" src="./resources/img/Belong12.png" alt="">
+                </div>
+                <div class="TTAN8">
+                    <audio class="AN8"
+                        src="./resources/music/You Never Know - BlackPink - THE ALBUM - BlackPink - Playlist NhacCuaTui.mp3"
+                        controls></audio>
+                    <p class="title-AN8">You Never Know</p>
+                    <img class="luanngo8" src="./resources/img/Belong12.png" alt="">
+                </div>
+            </div>
+            <div class="col span-1-of-5 about-vidieo1">
+                <video class="VD7"
+                    src="./resources/vidieo/-HOW YOU LIKE THAT- của BLACKPINK và những kỷ lục được xô đổ.mp4" controls
+                    poster="./resources/img/bl1.jpg"></video>
+                <p class="title-VD">Black Pink</p>
+            </div>
+            <div class="col span-1-of-5 about-vidieo1">
+                <div>
+                    <video class="VD8" src="./resources/vidieo/BLACKPINK - _THE ALBUM_ JISOO Concept Teaser Video.mp4"
+                        controls poster="./resources/img/3.png"></video>
+                    <p class="title-VD">Jisoo</p>
+                </div>
+                <div class="TTAN9">
+                    <audio class="AN9"
+                        src="./resources/music/Crazy Over You - BlackPink - THE ALBUM - BlackPink - Playlist NhacCuaTui.mp3"
+                        controls></audio>
+                    <p class="title-AN9">Crazy Over You</p>
+                    <img class="luanngo9" src="./resources/img/Belong12.png" alt="">
+                </div>
+                <div class="TTAN10">
+                    <audio class="AN10"
+                        src="./resources/music/Bet You Wanna - BlackPink, Cardi B - THE ALBUM - BlackPink - Playlist NhacCuaTui.mp3"
+                        controls></audio>
+                    <p class="title-AN10">Bet You Wanna</p>
+                    <img class="luanngo10" src="./resources/img/Belong12.png" alt="">
+                </div>
+            </div>
+            <div class="col span-1-of-5 about-vidieo1">
+                <div>
+                    <video class="VD9" src="./resources/vidieo/BLACKPINK - _THE ALBUM_ JENNIE Concept Teaser Video.mp4"
+                        controls poster="./resources/img/4.png"></video>
+                    <p class="title-VD">Jennie</p>
+                </div>
+                <div class="TTAN11">
+                    <audio class="AN11"
+                        src="./resources/music/Love To Hate Me - BlackPink - THE ALBUM - BlackPink - Playlist NhacCuaTui.mp3"
+                        controls></audio>
+                    <p class="title-AN11">Love To Hate Me</p>
+                    <img class="luanngo11" src="./resources/img/Belong12.png" alt="">
+                </div>
+                <div class="TTAN12">
+                    <audio class="AN12" src="./resources/music/Ice Cream - BlackPink, Selena Gomez.mp3"
+                        controls></audio>
+                    <p class="title-AN12">Ice Cream</p>
+                    <img class="luanngo12" src="./resources/img/Belong12.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="nghesinotbat-section" id="nghesinoibat">
+        <h2>Excellent Artist</h2>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <blockquote>
+                    We always strive to produce more and more quality products for everyone in general and ARMY in
+                    particular.
+                    <cite>
+                        <img src="./resources/img/BTSW - AVT.jpg" alt="BTS"> BTS(BangTan Boys)
+                    </cite>
+                </blockquote>
+            </div>
+            <div class="col span-1-of-3">
+                <blockquote>
+                    Blink and everyone please wait for us. We will come up with excellent products so that we do not
+                    disappoint.
+                    <cite>
+                        <img src="./resources/img/bl1.jpg" alt="BlackPink"> BlackPink
+                    </cite>
+                </blockquote>
+            </div>
+            <div class="col span-1-of-3">
+                <blockquote>
+                    Sone ! I am always proud of you for having been with me for the past eleven years.I love you
+                    guys so
+                    much! Love guys
+                    <cite>
+                        <img src="./resources/img/TeaYeon.jpg" alt="BTS">Kim Tea Yeon(SNSD)
+                    </cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+    <section class="music-section" id="music">
+        <div class="row">
+            <h2>Music</h2>
+            <p class="p-long">All Music Available On LN*Tunes Store</p>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-6 about-audio">
+                <div class="tooltip">
+                    <audio class="AN13" src="./resources/music/Celebrity - IU.mp3" controls></audio>
+                    <span class="tooltiptext">Celebrity - IU</span>
+                    <img class="TTAN13" src="./resources/img/Belong13.png" alt="">
+                    <span class="tooltiptextl">Information:<a
+                            href="./Infomation/CelebrityIU.html">Let's Go</a></span>
+                </div>
+            </div>
+            <div class="col span-1-of-6 about-audio">
+                <div class="tooltip">
+                    <audio class="AN14" src="./resources/music/Tải bài hát Cry For Me chất lượng cao.mp3"
+                        controls></audio>
+                    <span class="tooltiptext1">Cry For Me - Twice</span>
+                    <img class="TTAN14" src="./resources/img/Belong13.png" alt="">
+                    <span class="tooltiptextl1">Information:<a
+                            href="./Infomation/CryForMe(Twice).html">Let's Go</a></span>
+                </div>
+            </div>
+            <div class="col span-1-of-6 about-audio">
+                <div class="tooltip">
+                    <audio class="AN15" src="./resources/music/Like Water - Wendy (Red Velvet).mp3" controls></audio>
+                    <span class="tooltiptext2">Like Water - Wendy</span>
+                    <img class="TTAN15" src="./resources/img/Belong13.png" alt="">
+                    <span class="tooltiptextl2">Information:<a
+                            href="./Infomation/LikeWater(Wendy).html">Let's Go</a></span>
+                </div>
+            </div>
+            <div class="col span-1-of-6 about-audio">
+                <div class="tooltip">
+                    <audio class="AN16" src="./resources/music/Lilac - IU.mp3" controls></audio>
+                    <span class="tooltiptext3">LiLac - IU</span>
+                    <img class="TTAN16" src="./resources/img/Belong13.png" alt="">
+                    <span class="tooltiptextl3">Information:<a
+                            href="./Infomation/Lilac(IU).html">Let's Go</a></span>
+                </div>
+            </div>
+            <div class="col span-1-of-6 about-audio">
+                <div class="tooltip">
+                    <audio class="AN17" src="./resources/music/The Morass (Penthouse 2 Ost) - Lee Ye Joon.mp3"
+                        controls></audio>
+                    <span class="tooltiptext4">The Morass - Lee Yejoon</span>
+                    <img class="TTAN17" src="./resources/img/Belong13.png" alt="">
+                    <span class="tooltiptextl4">Information:<a href="./Infomation/The Morass(Lee Yejoon).html">Let's Go</a></span>
+                </div>
+            </div>
+            <div class="col span-1-of-6 about-audio">
+                <div class="tooltip">
+                    <audio class="AN18" src="./resources/music/This Is What I Am (Penthouse 2 OST) - Lim Chang Jung.mp3"
+                        controls></audio>
+                    <span class="tooltiptext5">This Is What I Am - Lim Changjung</span>
+                    <img class="TTAN18" src="./resources/img/Belong13.png" alt="">
+                    <span class="tooltiptextl5">Information:<a href="./Infomation/This Is What I Am(Lim Changjung).html">Let's Go</a></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-6 about-audio">
+                    <div class="tooltip">
+                        <audio class="AN19" src="./resources/music/Feel Special - TWICE.mp3" controls></audio>
+                        <span class="tooltiptext6">Feel Special - Twice</span>
+                        <img class="TTAN19" src="./resources/img/Belong13.png" alt="">
+                        <span class="tooltiptextl6">Information:<a
+                                href="./Infomation/Feel Special(Twice).html">Let's Go</a></span>
+                    </div>
+                </div>
+                <div class="col span-1-of-6 about-audio">
+                    <div class="tooltip">
+                        <audio class="AN20" src="./resources/music/Solo - Jennie.mp3" controls></audio>
+                        <span class="tooltiptext7">Solo - Jennie</span>
+                        <img class="TTAN20" src="./resources/img/Belong13.png" alt="">
+                        <span class="tooltiptextl7">Information:<a
+                                href="./Infomation/Solo(Jennie).html">Let's Go</a></span>
+                    </div>
+                </div>
+                <div class="col span-1-of-6 about-audio">
+                    <div class="tooltip">
+                        <audio class="AN21" src="./resources/music/Psycho - Red Velvet.mp3" controls></audio>
+                        <span class="tooltiptext8">Psycho - Red Velvet</span>
+                        <img class="TTAN21" src="./resources/img/Belong13.png" alt="">
+                        <span class="tooltiptextl8">Information:<a
+                                href="./Infomation/Psycho(RedVelvet).html">Let's Go</a></span>
+                    </div>
+                </div>
+                <div class="col span-1-of-6 about-audio">
+                    <div class="tooltip">
+                        <audio class="AN22"
+                            src="./resources/music/All With You (Moon Lovers Scarlet Heart Ryo OST) - Tae Yeon.mp3"
+                            controls></audio>
+                        <span class="tooltiptext9">All With You - Taeyeon</span>
+                        <img class="TTAN22" src="./resources/img/Belong13.png" alt="">
+                        <span class="tooltiptextl9">Information:<a
+                                href="./Infomation/AllWithYou(Taeyeon).html">Let's Go</a></span>
+                    </div>
+                </div>
+                <div class="col span-1-of-6 about-audio">
+                    <div class="tooltip">
+                        <audio class="AN23"
+                            src="./resources/music/As If It_s Your Last - BlackPink - As If It_s Your Last (Single) - BlackPink - Playlist NhacCuaTui.mp3"
+                            controls></audio>
+                        <span class="tooltiptext10">As If It's Your Last - BlackPink</span>
+                        <img class="TTAN23" src="./resources/img/Belong13.png" alt="">
+                        <span class="tooltiptextl10">Information:<a
+                                href="./Infomation/As If It's Your Last(BlackPink).html">Let's Go</a></span>
+                    </div>
+                </div>
+                <div class="col span-1-of-6 about-audio">
+                    <div class="tooltip">
+                        <audio class="AN24" src="./resources/music/Dynamate-BTS.mp3" controls></audio>
+                        <span class="tooltiptext11">Dynamate - BTS</span>
+                        <img class="TTAN24" src="./resources/img/Belong13.png" alt="">
+                        <span class="tooltiptextl11">Information:<a
+                                href="./Infomation/Dynamite(BTS).html">Let's Go</a></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-6 about-audio">
+                        <div class="tooltip">
+                            <audio class="AN25" src="./resources/music/I Can_t Stop Me _Twice.mp3" controls></audio>
+                            <span class="tooltiptext12">I Can't Stop Me - Twice</span>
+                            <img class="TTAN25" src="./resources/img/Belong13.png" alt="">
+                            <span class="tooltiptextl12">Information:<a
+                                    href="./Infomation/I Cant Stop Me(Twice).html">Let's Go</a></span>
+                        </div>
+                    </div>
+                    <div class="col span-1-of-6 about-audio">
+                        <div class="tooltip">
+                            <audio class="AN26" src="./resources/music/Divine - SNSD.mp3" controls></audio>
+                            <span class="tooltiptext13">Divine - SNSD</span>
+                            <img class="TTAN26" src="./resources/img/Belong13.png" alt="">
+                            <span class="tooltiptextl13">Information:<a
+                                    href="./Infomation/Divine(SNSD).html">Let's Go</a></span>
+                        </div>
+                    </div>
+                    <div class="col span-1-of-6 about-audio">
+                        <div class="tooltip">
+                            <audio class="AN27" src="./resources/music/Boy With Luv-BTS.mp3" controls></audio>
+                            <span class="tooltiptext14">Boy With Luv - BTS</span>
+                            <img class="TTAN27" src="./resources/img/Belong13.png" alt="">
+                            <span class="tooltiptextl14">Information:<a
+                                    href="./Infomation/Boy With Luv(BTS).html">Let's Go</a></span>
+                        </div>
+                    </div>
+                    <div class="col span-1-of-6 about-audio">
+                        <div class="tooltip">
+                            <audio class="AN28" src="./resources/music/Make A Wish (Birthday Song) - NCT U.mp3"
+                                controls></audio>
+                            <span class="tooltiptext15">Make A Wish (Birthday Song) - NCT U</span>
+                            <img class="TTAN28" src="./resources/img/Belong13.png" alt="">
+                            <span class="tooltiptextl15">Information:<a
+                                    href="./Infomation/Make A Wish (Birthday Song)(NCT U).html">Let's Go</a></span>
+                        </div>
+                    </div>
+                    <div class="col span-1-of-6 about-audio">
+                        <div class="tooltip">
+                            <audio class="AN29" src="./resources/music/Nonstop - Oh My Girl.mp3" controls></audio>
+                            <span class="tooltiptext16">Nonstop - Oh My Girl</span>
+                            <img class="TTAN29" src="./resources/img/Belong13.png" alt="">
+                            <span class="tooltiptextl16">Information:<a
+                                    href="./Infomation/Nonstop(Oh My Girl).html">Let's Go</a></span>
+                        </div>
+                    </div>
+                    <div class="col span-1-of-6 about-audio">
+                        <div class="tooltip">
+                            <audio class="AN30" src="./resources/music/Bambi - Baekhyun.mp3" controls></audio>
+                            <span class="tooltiptext17">Bambi - Baekhyun</span>
+                            <img class="TTAN30" src="./resources/img/Belong13.png" alt="">
+                            <span class="tooltiptextl17">Information:<a
+                                    href="./Infomation/Bambi(Baekhyun).html">Let's Go</a></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-6 about-audio">
+                            <div class="tooltip">
+                                <audio class="AN31" src="./resources/music/Next Level - aespa.mp3" controls></audio>
+                                <span class="tooltiptext18">Next Level - Aespa</span>
+                                <img class="TTAN31" src="./resources/img/Belong13.png" alt="">
+                                <span class="tooltiptextl18">Information:<a
+                                        href="./Infomation/Next Level - Aespa.html">Let's Go</a></span>
+                            </div>
+                        </div>
+                        <div class="col span-1-of-6 about-audio">
+                            <div class="tooltip">
+                                <audio class="AN32" src="./resources/music/In The Morning - ITZY.mp3" controls></audio>
+                                <span class="tooltiptext19">In The Morning - ITZY</span>
+                                <img class="TTAN32" src="./resources/img/Belong13.png" alt="">
+                                <span class="tooltiptextl19">Information:<a href="Infomation/In The Morning - ITZY.html">Let's Go</a></span>
+                            </div>
+                        </div>
+                        <div class="col span-1-of-6 about-audio">
+                            <div class="tooltip">
+                                <audio class="AN33" src="./resources/music/Butter-BTS.mp3" controls></audio>
+                                <span class="tooltiptext20">Butter - BTS</span>
+                                <img class="TTAN33" src="./resources/img/Belong13.png" alt="">
+                                <span class="tooltiptextl20">Information:<a
+                                        href="Infomation/Butter(BTS).html">Let's Go</a></span>
+                            </div>
+                        </div>
+                        <div class="col span-1-of-6 about-audio">
+                            <div class="tooltip">
+                                <audio class="AN34" src="./resources/music/I - Tae Yeon, Verbal Jint.mp3"
+                                    controls></audio>
+                                <span class="tooltiptext21">I - Taeyeon</span>
+                                <img class="TTAN34" src="./resources/img/Belong13.png" alt="">
+                                <span class="tooltiptextl21">Information:<a
+                                        href="Infomation/I(Taeyeon).html">Let's Go</a></span>
+                            </div>
+                        </div>
+                        <div class="col span-1-of-6 about-audio">
+                            <div class="tooltip">
+                                <audio class="AN35"
+                                    src="./resources/music/Forgetting You (Moon Lovers Scarlet Heart Ryo OST) - Davichi.mp3"
+                                    controls></audio>
+                                <span class="tooltiptext22">Forgetting You - Davichi</span>
+                                <img class="TTAN35" src="./resources/img/Belong13.png" alt="">
+                                <span class="tooltiptextl22">Information:<a
+                                        href="Infomation/Forgetting You(Davichi).html">Let's Go</a></span>
+                            </div>
+                        </div>
+                        <div class="col span-1-of-6 about-audio">
+                            <div class="tooltip">
+                                <audio class="AN36" src="./resources/music/Done For Me (Hotel Del Luna OST).mp3"
+                                    controls></audio>
+                                <span class="tooltiptext23">Done For Me - Punch</span>
+                                <img class="TTAN36" src="./resources/img/Belong13.png" alt="">
+                                <span class="tooltiptextl23">Information:<a
+                                        href="Infomation/Done For Me(Punch).html">Let's Go</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-6 about-audio">
+                            <div class="tooltip">
+                                <audio class="AN37" src="./resources/music/Adios - Everglow.mp3" controls></audio>
+                                <span class="tooltiptext24">Adios - Everglow</span>
+                                <img class="TTAN37" src="./resources/img/Belong13.png" alt="">
+                                <span class="tooltiptextl24">Information:<a
+                                        href="Infomation/Adios - Everglow.html">Let's Go</a></span>
+                            </div>
+                        </div>
+                        <div class="col span-1-of-6 about-audio">
+                            <div class="tooltip">
+                                <audio class="AN38" src="./resources/music/Don_T Know What To Do - BlackPink.mp3"
+                                    controls></audio>
+                                <span class="tooltiptext25">Don'T Know What To Do - BlackPink</span>
+                                <img class="TTAN38" src="./resources/img/Belong13.png" alt="">
+                                <span class="tooltiptextl25">Information:<a
+                                        href="Infomation/Don'T Know What To Do - BlackPink.html">Let's Go</a></span>
+                            </div>
+                        </div>
+                        <div class="col span-1-of-6 about-audio">
+                            <div class="tooltip">
+                                <audio class="AN39" src="./resources/music/Untitled, 2014 - G-Dragon.mp3"
+                                    controls></audio>
+                                <span class="tooltiptext26">Untitled, 2014 - G-Dragon</span>
+                                <img class="TTAN39" src="./resources/img/Belong13.png" alt="">
+                                <span class="tooltiptextl26">Information:<a
+                                        href="Infomation/Untitled, 2014 - G-Dragon.html">Let's Go</a></span>
+                            </div>
+                        </div>
+                        <div class="col span-1-of-6 about-audio">
+                            <div class="tooltip">
+                                <audio class="AN40" src="./resources/music/Bad Boy - Red Velvet.mp3" controls></audio>
+                                <span class="tooltiptext27">Bad Boy - Red Velvet</span>
+                                <img class="TTAN40" src="./resources/img/Belong13.png" alt="">
+                                <span class="tooltiptextl27">Information:<a
+                                        href="Infomation/Bad Boy - Red Velvet.html">Let's Go</a></span>
+                            </div>
+                        </div>
+                        <div class="col span-1-of-6 about-audio">
+                            <div class="tooltip">
+                                <audio class="AN41" src="./resources/music/I Got A Boy - SNSD.mp3" controls></audio>
+                                <span class="tooltiptext28">I Got A Boy - SNSD</span>
+                                <img class="TTAN41" src="./resources/img/Belong13.png" alt="">
+                                <span class="tooltiptextl28">Information:<a
+                                        href="Infomation/I Got A Boy - SNSD.html">Let's Go</a></span>
+                            </div>
+                        </div>
+                        <div class="col span-1-of-6 about-audio">
+                            <div class="tooltip">
+                                <audio class="AN42"
+                                    src="./resources/music/Always (OST Descendants Of The Sun) - Yoon Mirae.mp3"
+                                    controls></audio>
+                                <span class="tooltiptext29">Always (OST Descendants Of The Sun) - Yoon Mirae</span>
+                                <img class="TTAN42" src="./resources/img/Belong13.png" alt="">
+                                <span class="tooltiptextl29">Information:<a
+                                        href="Infomation/Always (OST Descendants Of The Sun) - Yoon Mirae.html">Let's Go</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-6 about-audio">
+                            <div class="tooltip">
+                                <audio class="AN43"
+                                    src="./resources/music/Back In Time (The Moon Embracing The Sun OST) - Lyn.mp3"
+                                    controls></audio>
+                                <span class="tooltiptext30">Back In Time (The Moon Embracing The Sun OST) - Lyn</span>
+                                <img class="TTAN43" src="./resources/img/Belong13.png" alt="">
+                                <span class="tooltiptextl30">Information:<a
+                                        href="Infomation/Back In Time (The Moon Embracing The Sun OST) - Lyn.html">Let's Go</a></span>
+                            </div>
+                        </div>
+                        <div class="col span-1-of-6 about-audio">
+                            <div class="tooltip">
+                                <audio class="AN44" src="./resources/music/Gravity - Tae Yeon.mp3" controls></audio>
+                                <span class="tooltiptext31">Gravity - Tae Yeon</span>
+                                <img class="TTAN44" src="./resources/img/Belong13.png" alt="">
+                                <span class="tooltiptextl31">Information:<a
+                                        href="Infomation/Gravity - Tae Yeon1.html">Let's Go</a></span>
+                            </div>
+                        </div>
+                        <div class="col span-1-of-6 about-audio">
+                            <div class="tooltip">
+                                <audio class="AN45"
+                                    src="./resources/music/My Love (Moon Lovers Scarlet Heart Ryo OST) - Lee Hi.mp3"
+                                    controls></audio>
+                                <span class="tooltiptext32">My Love (Moon Lovers Scarlet Heart Ryo OST) - Lee Hi</span>
+                                <img class="TTAN45" src="./resources/img/Belong13.png" alt="">
+                                <span class="tooltiptextl32">Information:<a
+                                        href="Infomation/My Love (Moon Lovers Scarlet Heart Ryo OST) - Lee Hi.html">Let's Go</a></span>
+                            </div>
+                        </div>
+                        <div class="col span-1-of-6 about-audio">
+                            <div class="tooltip">
+                                <audio class="AN46" src="./resources/music/Remember Me (Hotel Del Luna OST) - Gummy.mp3"
+                                    controls></audio>
+                                <span class="tooltiptext33">Remember Me (Hotel Del Luna OST) - Gummy</span>
+                                <img class="TTAN46" src="./resources/img/Belong13.png" alt="">
+                                <span class="tooltiptextl33">Information:<a
+                                        href="Infomation/Remember Me (Hotel Del Luna OST) - Gummy.html">Let's Go</a></span>
+                            </div>
+                        </div>
+                        <div class="col span-1-of-6 about-audio">
+                            <div class="tooltip">
+                                <audio class="AN47" src="./resources/music/With You - Lyn.mp3" controls></audio>
+                                <span class="tooltiptext34">With You - Lyn</span>
+                                <img class="TTAN47" src="./resources/img/Belong13.png" alt="">
+                                <span class="tooltiptextl34">Information:<a
+                                        href="Infomation/With You - Lyn.html">Let's Go</a></span>
+                            </div>
+                        </div>
+                        <div class="col span-1-of-6 about-audio">
+                            <div class="tooltip">
+                                <audio class="AN48" src="./resources/music/Sick Enough To Die - MC Mong.mp3"
+                                    controls></audio>
+                                <span class="tooltiptext35">Sick Enough To Die - MC Mong</span> 
+                                <img class="TTAN48" src="./resources/img/Belong13.png" alt="">
+                                <span class="tooltiptextl35">Information:<a
+                                        href="Infomation/Sick enough to die.html">Let's Go</a></span>
+                            </div>
+                        </div>
+                    </div>
+    </section>
+    <section class="artist-section" id="artist">
+        <h2>Artist</h2>
+        <div class="row">
+            <ul class="artist-showcase clearfix">
+                <li>
+                    <figure>
+                        <div class="tooltip1">
+                            <img class="img-artist" src="./resources/img/Nghệ Sĩ Jisoo1.jpg" alt="Jisoo">
+                            <span class="tooltiptext20">Kim Ji-soo, commonly known by her stage name Jisoo, is a South
+                                Korean idol singer, actress, model, and host. She is the oldest member of the Korean
+                                girl group Blackpink, founded and managed by YG Entertainment. <a
+                                    href="https://vi.wikipedia.org/wiki/Jisoo">Wikipedia</a> </span>
+                        </div>
+                        <figcaption>
+                            Jisoo
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <div class="tooltip1">
+                            <img class="img-artist" src="./Infomation Img/Nghệ Sĩ Taceyeon.png" alt="Teyeong">
+                            <span class="tooltiptext21">Lee Taeyong, better known by his stage name Taeyong, is a South
+                                Korean singer, a member of the South Korean group NCT led by S.M. Entertainment founded
+                                and managed. <a href="https://vi.wikipedia.org/wiki/Lee_Tae-yong">Wikipedia</a> </span>
+                        </div>
+                        <figcaption>
+                            Taeyong
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <div class="tooltip1">
+                            <img class="img-artist" src="./Infomation Img/Nghệ Sĩ Jennie.png" alt="Jennie">
+                            <span class="tooltiptext22">Jennie Kim, commonly known by her stage name Jennie, is a South
+                                Korean singer and rapper, a member of the girl group Blackpink founded and managed by YG
+                                Entertainment. <a href="https://vi.wikipedia.org/wiki/Jennie_Kim">Wikipedia</a> </span>
+                        </div>
+                        <figcaption>
+                            Jennie
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <div class="tooltip1">
+                            <img class="img-artist" src="./resources/img/Nghệ Sĩ TeYeon1.jpg" alt="Taeyeon">
+                            <span class="tooltiptext23">Kim Tae-yeon, commonly known by her stage name Taeyeon, is a
+                                South Korean female singer, vocalist and leader of the South Korean girl group Girls'
+                                Generation. She is also a member of Girls' Generation's TTS and Oh!GG subgroups, as well
+                                as S.M's special group SM the Ballad. Entertainment. <a
+                                    href="https://vi.wikipedia.org/wiki/Kim_Tae-yeon">Wikipedia</a> </span>
+                        </div>
+                        <figcaption>
+                            Taeyeon
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+            <ul class="artist-showcase clearfix">
+                <li>
+                    <figure>
+                        <div class="tooltip1">
+                            <img class="img-artist" src="./Infomation Img/I cant stop me - Twice.png" alt="Twice">
+                            <span class="tooltiptext24">Twice, often stylized as TWICE, is a South Korean girl group
+                                formed by JYP Entertainment. The group consists of 9 members: Nayeon, Jeongyeon, Momo,
+                                Sana, Jihyo, Mina, Dahyun, Chaeyoung and Tzuyu. <a
+                                    href="https://vi.wikipedia.org/wiki/Twice">Wikipedia</a> </span>
+                        </div>
+                        <figcaption>
+                            Twice
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <div class="tooltip1">
+                            <img class="img-artist" src="./Infomation Img/Nghệ Sĩ BTS.png" alt="BTS">
+                            <span class="tooltiptext25">BTS, also known as Bangtan Boys, is a South Korean boy band
+                                formed by Big Hit Entertainment in 2010 and debuted in 2013. The group consists of 7
+                                members Jin, Suga, J-Hope, RM, Jimin, V and Jungkook. The members co-compose and produce
+                                most of their own music. <a href="https://vi.wikipedia.org/wiki/BTS">Wikipedia</a>
+                            </span>
+                        </div>
+                        <figcaption>
+                            BTS
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <div class="tooltip1">
+                            <img class="img-artist" src="./Infomation Img/Lilac - IU.png" alt="IU">
+                            <span class="tooltiptext26">Lee Ji-eun, commonly known by her stage name IU, is a South
+                                Korean singer, songwriter and actress. She became a trainee under Kakao M in 2007 and
+                                debuted as a singer at the age of 15 with the album Lost and Found. <a
+                                    href="https://vi.wikipedia.org/wiki/IU_(ca_s%C4%A9)">Wikipedia</a></span>
+                        </div>
+                        <figcaption>
+                            IU
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <div class="tooltip1">
+                            <img class="img-artist" src="./Infomation Img/Nghệ Sĩ TXT.png" alt="TXT">
+                            <span class="tooltiptext27">Tomorrow X Together, commonly known as TXT, is a South Korean
+                                boy band formed by Big Hit Entertainment. The group consists of 5 members: Yeonjun,
+                                Soobin, Beomgyu, Taehyun and Huening Kai. The group debuted on March 4, 2019 with their
+                                first mini album The Dream Chapter. <a
+                                    href="https://vi.wikipedia.org/wiki/Tomorrow_X_Together">Wikipedia</a></span>
+                        </div>
+                        <figcaption>
+                            TXT
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="premium-section" id="premium">
+        <h2>Pick Your Premium</h2>
+        <p class="p-long">Listen without limits on your phone, speaker, and other devices.</p>
+        <div class="row">
+            <div class="col span-1-of-4">
+                <div class="premium-box">
+                    <h3 class="luan">Individual</h3>
+                    <p class="premium-much">$9.99 <span>/month after offer period 1 account</span></p>
+                    <a href="#" class="btn5">1 month free</a>
+                    <ul>
+                        <li><i class="fas fa-check small-icon"></i>Listen to music ad-free</li>
+                        <li><i class="fas fa-check small-icon"></i>Play anywhere - even offline</li>
+                        <li><i class="fas fa-check small-icon"></i>On-deman playback</li>
+                    </ul>
+                    <a href="./Premium/premium.html" class="btn1">GET STARTED</a>
+                </div>
+            </div>
+            <div class="col span-1-of-4">
+                <div class="premium-box">
+                    <h3 class="luan">Duo</h3>
+                    <p class="premium-much">$12.99 <span>/month after offer period 2 accounts</span></p>
+                    <a href="#" class="btn5">1 month free</a>
+                    <ul>
+                        <li><i class="fas fa-check small-icon"></i>2 Premium accounts for a couple under one roof
+                        </li>
+                        <li><i class="fas fa-check small-icon"></i>Duo Mix: a playlist for two, regularly updated
+                            with
+                            music you both enjoy</li>
+                        <li><i class="fas fa-check small-icon"></i>Ad-free music listening, play offline, on-demand
+                            playback</li>
+                    </ul>
+                    <a href="./Premium/premium.html" class="btn2">GET STARTED</a>
+                </div>
+            </div>
+            <div class="col span-1-of-4">
+                <div class="premium-box">
+                    <h3 class="luan">Family</h3>
+                    <p class="premium-much">$14.99 <span>/month after offer period 6 accounts</span></p>
+                    <a href="#" class="btn5">1 month free</a>
+                    <ul>
+                        <li><i class="fas fa-check small-icon"></i>6 Premium accounts for family members living
+                            under
+                            one roof</li>
+                        <li><i class="fas fa-check small-icon"></i>Family Mix: a playlist for your family, regularly
+                            updated with music you all enjoy</li>
+                        <li><i class="fas fa-check small-icon"></i>Block explicit music</li>
+                        <li><i class="fas fa-check small-icon"></i>Ad-free music listening, play offline, on-demand
+                            playback</li>
+                        <li><i class="fas fa-check small-icon"></i>LN*Tunes Store Kids: a separate app made just for
+                            kids</li>
+                    </ul>
+                    <a href="./Premium/premium.html" class="btn3">GET STARTED</a>
+                </div>
+            </div>
+            <div class="col span-1-of-4">
+                <div class="premium-box">
+                    <h3 class="luan">Student</h3>
+                    <p class="premium-much">$4.99 <span>/month after offer period 1 account</span></p>
+                    <a href="#" class="btn5">1 month free</a>
+                    <ul>
+                        <li><i class="fas fa-check small-icon"></i>LN*Flix (ad-supported) plan</li>
+                        <li><i class="fas fa-check small-icon"></i>SHOWTIME</li>
+                        <li><i class="fas fa-check small-icon"></i>Listen to music ad-free</li>
+                        <li><i class="fas fa-check small-icon"></i>Play anywhere - even offline</li>
+                        <li><i class="fas fa-check small-icon"></i>On-demand playback</li>
+                    </ul>
+                    <a href="./Premium/premium.html" class="btn4">GET STARTED</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="end-section" id="end">
+        <div class="row">
+            <div class="col span-1-of-3">
+                <ul class="thongtin">
+                    <li><i class="fas fa-map-marker-alt small-icon"></i> Address: Hung Yen province</li>
+                    <li><i class="fas fa-envelope small-icon"></i>Email: luanngo01072001@gmail.com</li>
+                    <li><i class="fas fa-phone small-icon"></i>Phone Number: (+84) 862634420</li>
+                </ul>
+                <ul class="social-icons">
+                    <a href="https://www.facebook.com/luan.ngo.ilovemyself">
+                        <li><i class="fab fa-facebook" style="color: #00AFF0;"></i></li>
+                    </a>
+                    <a href="https://appleid.apple.com/account/manage">
+                        <li><i class="fab fa-twitter-square" style="color: #1DA1F2;"></i></li>
+                    </a>
+                    <a href="https://www.instagram.com/luan34k/">
+                        <li><i class="fab fa-instagram" style="color: #1ED760;"></i></li>
+                    </a>
+                    <a href="https://mail.google.com/mail/u/0/#inbox">
+                        <li><i class="fab fa-google-plus-square" style="color: #EA4335;"></i></li>
+                    </a>
+                </ul>
+            </div>
+            <div class="col span-2-of-3">
+                <form>
+                    <div class="row">
+                        <div class="col 1-of-3 hihi">
+                            <label>Name</label>
+                            <input type="text" placeholder="Your Name">
+                        </div>
+                        <div class="col 2-of-3">
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col 1-of-3 hihi">
+                            <label>Email</label>
+                            <input type="text" placeholder="Your Email">
+                        </div>
+                        <div class="col 2-of-3">
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col 1-of-3">
+                            <label class="lb1">Message</label>
+                            <textarea placeholder="Your Message"></textarea>
+                        </div>
+                        <div class="col 2-of-3">
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="sumit" class="btn6" value="Send It">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="row">
+            <div class="col span-1-of-5 about-end">
+                <a href="../luanngo.html"><img class="A6" src="../resources/img/Belong9.png" alt=""></a>
+            </div>
+            <div class="col span-1-of-5  about-end">
+                <h3 class="luan1">COMPANY</h3>
+                <p class="TT12">About</p>
+                <p class="TT13">Jobs</p>
+                <p class="TT14">For the Record</p>
+            </div>
+            <div class="col span-1-of-5  about-end">
+                <h3 class="luan1">COMMUNITIES</h3>
+                <p class="TT15">For Artists</p>
+                <p class="TT16">Developers</p>
+                <p class="TT17">Advertising</p>
+                <p class="TT18">Investors</p>
+                <p class="TT19">Vendors</p>
+            </div>
+            <div class="col span-1-of-5  about-end">
+                <h3 class="luan1">USEFUL LINKS</h3>
+                <p class="TT20">Support</p>
+                <p class="TT21">Web Player</p>
+                <p class="TT22">Free Mobile App</p>
+            </div>
+            <div class="col span-1-of-5  about-end">
+                <ul class="social-icons1">
+                    <a href="https://www.facebook.com/luan.ngo.ilovemyself">
+                        <li><i class="fab fa-facebook"></i></li>
+                    </a>
+                    <a href="https://www.instagram.com/luan34k/">
+                        <li><i class="fab fa-instagram"></i></li>
+                    </a>
+                    <a href="https://mail.google.com/mail/u/0/#inbox">
+                        <li><i class="fab fa-google-plus-square"></i></li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div class="end1">
+            <ul class="menu1">
+                <li><a href="#">Legal</a></li>
+                <li><a href="#">Privacy Center</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a>Cookies</a></li>
+                <li><a href="#">About Ads</a></li>
+                <li><a href="#">Additional CA Privacy Disclosures</a></li>
+            </ul>
+            <p class="TT23">© 2021 LN*Tunes Store AB</p>
+        </div>
+        <div class="TT24-end">
+            <p class="TT24">© Copyright LN*Tunes Store, All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="./verdors/js/jquery.waypoints.min.js"></script>
+
+    <script src="resources/js/luanngo.js"></script>
+</body>
+
+</html>

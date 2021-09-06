@@ -1,0 +1,352 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 20px;
+    color: #5a5a5a;
+    background-color: #ffffff;
+    text-rendering: optimizeLegibility;
+}
+body{
+    overflow-x: hidden;
+    background-image: url(../resources/img/Nềnlogin5.png);
+    
+}
+.end-section{
+    width: 650px;
+    padding: 16px;
+    margin: 0 auto;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+.Logo{
+    max-width: 6cm;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+h1{
+    width: 362px;
+    height: 44px;
+    font-size: 110%;
+    font-weight: 900;
+    color: black;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-top: 4px;
+    border-radius: 5px;
+}
+.heading{
+    position: absolute;
+    top: 26%;
+    left: 42.5%;
+    transform: translate(-10%, -10%);
+}
+.btn{
+    position: relative;
+    text-decoration: none;
+    background-image: linear-gradient(to right, #1A2980 0%, #26D0CE  51%, #1A2980  100%);
+    color: white;
+    padding: 15px 30px;
+    width: 270px;
+    display: inline-block;
+    text-align: center;
+    font-size: 70%;
+    font-weight: 700;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border-radius: 10px;
+    display: block;
+    margin-top: 47px;
+    margin-left: 38px;
+    margin-bottom: 18px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .btn:hover {
+   background-position: right center; 
+   color: #fff;
+   text-decoration: none;
+   color: black;
+  }
+.small-icon{
+    position: absolute;
+    left: 35px;
+    top: 20px;
+    font-weight: 700;
+}
+.TT1 , .TT3{
+    color: black;
+    font-size: 60%;
+    text-align: center;
+    margin-left: -42%;
+    font-weight: 700;
+}
+.TT2 , .TT4{
+    color:white;
+    text-align: center;
+    font-weight: 700;
+}
+.TT3:after{
+    content:"";
+    display: block;
+    width: 500px;
+    height: 2px;
+    background-color: #5680E9;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+form{
+    display: block;
+    margin-top: 5cm;
+}
+.Email , .Email3 ,.mk,.ten,.ngaysinh,.gioitinh1{
+    color: black;
+    padding-bottom: 24px;
+    font-weight: 900;
+    text-align: center;
+}
+.Email2 ,.Email5 ,.mk2,.ten2{
+    font-family: 'Noto Sans JP', sans-serif;
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    width: 500px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    resize: none;
+    padding-top: 14px ;
+    padding-left: 14px;
+    border: none;
+    background-color: #eeefff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.Email2 ,.Email5 ,.mk2,.ten2:focus{
+    outline: none;
+}
+ select{
+   color: black;
+    padding-bottom: 22px;
+    width: 200px;
+    padding-top: 14px ;
+    padding-left: 14px;
+    border-radius: 4px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #eeefff;
+    font-weight: 500;
+    font-family: 'Noto Sans JP', sans-serif;
+    border: none;
+ }
+ .ngaysinh3,.ngaysinh2,select:focus{
+     outline: none;
+ }
+ .ngaysinh2{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 4px;
+    resize: none;
+    padding-top: 14px ;
+    padding-left: 14px;
+    margin-left: 60px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #eeefff;
+    font-weight: 700;
+    border: none;
+ }
+ .ngaysinh3{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100px;
+    margin-top: 11.5px;
+    border-radius: 4px;
+    resize: none;
+    padding-top: 14px ;
+    padding-left: 14px;
+    margin-left: 45px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #eeefff;
+    font-weight: 700;
+    border: none;
+ }
+.gioitinh2{
+     display: flex;
+     flex-wrap: wrap;
+}
+.gioitinh5{
+    display: flex;
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+fieldset{
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    font-weight: 500;
+    padding-top: 14px ;
+    padding-left: 14px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    background-color: #eeefff;
+}
+.gioitinh3{
+    margin-top: -30px;
+    margin-left: 140px;
+}
+.gioitinh6{
+    margin-top: -30px;
+    margin-left: 1.3cm;
+}
+.gioitinh9{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn1 { background-image: linear-gradient(to right, #1c9ab1 0%, #053136  51%, #07c1da  100%);}
+.btn1{
+    text-decoration: none;
+    color: white;
+    padding: 15px 10px;
+    margin: 20px 50px;
+    width: 176px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 900;
+    display: block;
+    margin-left: auto;
+    margin-right:auto ;
+    font-size: 120%;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btn1:hover {
+   background-position: right center;
+   color: #fff;
+   text-decoration: none;
+   color: black;
+ }
+
+
+.TT5{
+    color: black;
+    font-size: 60%;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 700;
+}
+.TT7{
+    color: black;
+    font-size: 60%;
+    text-align: center;
+    font-weight: 700;
+}
+.TT6 , .TT8{
+    color:white;
+    text-align: center;
+}
+.TT9{
+    font-weight: 700;
+    text-align: center;
+    color: white;
+}
+.TT9::before{
+    content:"";
+    display: block;
+    width: 500px;
+    height: 2px;
+    background-color: #5680E9;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.btn2{
+    background-image: linear-gradient(to right, #1c9ab1 0%, #053136  51%, #07c1da  100%);
+    text-decoration: none;
+    color: white;
+    padding: 15px 10px;
+    margin: 20px 50px;
+    width: 176px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    display: block;
+    margin-left: auto;
+    margin-right:auto ;
+    font-size: 70%;
+    transition: 0.5s;
+    background-size: 200% auto;            
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+ .btn2:hover {
+   background-position: right center;
+   color: #fff;
+   text-decoration: none;
+   color: black;
+ }
+/**nút chọn /*/
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -4px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #eeefff;
+    transition: all 0.25s;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -4px;
+    left: -1px;
+    position: relative;
+    background-color: #5680E9;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #eeefff;
+}
+label{
+    font-weight: 700;
+}
+option{
+    font-weight: 700;
+}
+.form-message{
+    color: darkred;
+    margin: 8px 60px;
+    text-align: start;
+    font-size: 80%;
+    font-weight: 900;
+  }
+  .form-group{
+    display: flex;
+    flex-direction: column;
+  }

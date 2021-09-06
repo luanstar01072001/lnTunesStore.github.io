@@ -1,0 +1,264 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 20px;
+    color: #5a5a5a;
+    background-color: #ffffff;
+    text-rendering: optimizeLegibility;
+}
+body{
+    overflow-x: hidden;
+    margin: 0;
+}
+html::-webkit-scrollbar {
+	width: 10px;
+	background-color:#2f3631;
+}
+html::-webkit-scrollbar-thumb {
+	background-color: white;
+	border-radius: 4px;
+}
+html::-webkit-scrollbar-thumb:hover {
+	background-color: black;
+
+}
+/*************************PHẦN MENU TRÁI****************/
+.menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 244px;
+    background-color:black;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2px;
+}
+
+.menu li a{
+    display: block;
+    color:white;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-left: 18px;
+    margin-top: -28px;
+}
+.menu li{
+    transition: all 0.4s;
+    width: 244px;
+    height: 64px;
+    color: white;
+}
+.menu li:hover{
+    background-color:rgba(211, 211, 211, 0.651);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: black;
+    transform: scale(0.9);
+}
+.ico{
+    margin-top: 23px;
+    margin-left: 42px;
+}
+.LN{
+    position: relative;
+}
+.Logo{
+    max-width: 345px;
+    position: absolute;
+    top: 656px;
+    left: -61px;
+    position: fixed;
+}
+/*************************PHẦN MENU PHẢI****************/
+.p1{
+    position: relative;
+    margin-left: 16%;
+    background-color: #2f3631;
+    height: 2200px;
+}
+.TT{
+    color: white;
+    position: absolute;
+    top: 11px;
+    left: 10px;
+    font-weight: 900;
+}
+.TT::after{
+    content: "";
+    display: block;
+    width: 226px;
+    height: 8px;
+    background-color: #5680E9;
+    margin-top: 3px;
+    margin-left: 2px;
+    border-radius: 8px;
+}
+/**********************PHẦN ĐẦU********************/
+.phan1-section{
+    width: 1250px;
+}
+.phandau{
+    height: 90px;
+    position: relative;
+    top: 3cm;
+    left: 13px;
+    background-color: #2F363A;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    transition: all 0.4s;
+}
+.phandau:hover{
+    background-color: gray;
+}
+.A1{
+    position: absolute;
+    max-width: 90px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    transition: all 0.4s;
+}
+.A1:hover{
+    opacity: 0.8;
+}
+.TTAN{
+    color: white;
+    position: absolute;
+    top: 33px;
+    left: 108px;
+    font-size: 90%;
+    font-weight: 900;
+}
+.TTAN1{
+    color: white;
+    position: absolute;
+    top: 18px;
+    left: 108px;
+    font-size: 90%;
+    font-weight: 900;
+}
+.AN1{
+    margin-top: 5cm;
+    margin-left: 5cm;
+}
+.A1AN1{
+    position: absolute;
+    max-width: 40px;
+    border-radius: 50%;
+    top: 2px;
+    left: 247px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.2s; 
+}
+.A1AN1:hover{
+    transform: scale(1.05);
+}
+.A2AN1{
+    position: absolute;
+    max-width: 40px;
+    border-radius: 50%;
+    top: 48px;
+    left: 247px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    transition: all 0.2s;
+}
+.A2AN1:hover{
+    transform: scale(1.05);
+}
+.phan2-section{
+    width: 1250px;
+}
+.phandau1{
+    height: 90px;
+    position: relative;
+    top:3cm;
+    left: 13px;
+    background-color: #2F363A;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    transition: all 0.4s;
+}
+.phandau1:hover{
+    background-color: gray;
+}
+/*********************Phần Câu Chuyện /**********************/
+.TT1{
+    color: white;
+    position: absolute;
+    top: 355px;
+    left: 10px;
+    font-weight: 900;
+}
+.TT1::after{
+    content: "";
+    display: block;
+    width: 269px;
+    height: 8px;
+    background-color: #5680E9;
+    margin-top: 3px;
+    margin-left: 2px;
+    border-radius: 8px;
+}
+.phandau2{
+    height: 264px;
+    position: relative;
+    top:5cm;
+    left: 13px;
+    background-color: #2F363A;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    transition: all 0.4s;
+}
+.phandau2:hover{
+    background-color: gray;
+}
+.A2{
+    position: absolute;
+    top: 17px;
+    left: 22px;
+    max-width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    transition: all 0.4s;
+}
+.A2:hover{
+    opacity: 0.8;
+}
+.TTAN2{
+    color: white;
+    position: absolute;
+    top: 183px;
+    left: 23px;
+    font-size: 79%;
+    font-weight: 900;
+}
+.A1AN2{
+    position: absolute;
+    max-width: 40px;
+    border-radius: 50%;
+    top: 208px;
+    left: 99px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.2s; 
+}
+.A1AN2:hover{
+    transform: scale(1.05);
+}
+.A2AN2{
+    position: absolute;
+    max-width: 40px;
+    border-radius: 50%;
+    top: 208px;
+    left: 145px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    transition: all 0.2s;
+}
+.A2AN2:hover{
+    transform: scale(1.05);
+}

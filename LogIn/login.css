@@ -1,0 +1,256 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 20px;
+    color: #5a5a5a;
+    background-color: #ffffff;
+    text-rendering: optimizeLegibility;
+}
+body{
+    overflow-x: hidden;
+    background-image: url(../resources/img/nềnluan.jpg);
+}
+.Logo{
+    max-width: 6cm;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.end-section{
+    width: 600px;
+    padding: 16px;
+    margin: 0 auto;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    box-shadow: 3px 5px 10px #e0e0e0;
+}
+h1{
+    font-size: 110%;
+    font-weight: 900;
+    color: #5680E9;
+}
+.heading{
+    position: absolute;
+    top: 26%;
+    left: 43.5%;
+    transform: translate(-10%, -10%);
+}
+.btn{
+    position: relative;
+    text-decoration: none;
+    background-image: linear-gradient(to right, #1A2980 0%, #26D0CE  51%, #1A2980  100%);
+    color: white;
+    padding: 15px 30px;
+    width: 270px;
+    text-align: center;
+    font-size: 70%;
+    font-weight: 700;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border-radius: 10px;
+    display: block;
+    margin-top: 47px;
+    margin-left: -13px;
+    margin-bottom: 18px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .btn:hover {
+   background-position: right center; 
+   color: #fff;
+   text-decoration: none;
+   color: black;
+  }
+.small-icon{
+    position: absolute;
+    top: 19px;
+    left: 24px;
+    font-weight: 700;
+}
+.btn1{
+    position: relative;
+    text-decoration: none;
+    background-image: linear-gradient(to right, rgb(54, 0, 51) 0%, rgb(11, 135, 147) 51%, rgb(54, 0, 51) 100%);
+    color: white;
+    padding: 15px 30px;
+    width: 270px;
+    text-align: center;
+    font-size: 70%;
+    font-weight: 700;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border-radius: 10px;
+    display: block;
+    margin-top: 22px;
+    margin-left: -13px;
+    margin-bottom: 18px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .btn1:hover {
+   background-position: right center; 
+   color: #fff;
+   text-decoration: none;
+   color: black;
+  }
+.small-icon1{
+    position: absolute;
+    top: 19px;
+    left: 24px;
+    font-weight: 700;
+}
+.btn4 {background-image: linear-gradient(to right, #1c9ab1 0%, #053136  51%, #07c1da  100%);}
+.btn4{
+    text-decoration: none;
+    color: white;
+    padding: 15px 10px;
+    margin: 10px 50px;
+    width: 176px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 900;
+    display: block;
+    margin-left: auto;
+    margin-right:auto ;
+    font-size: 70%;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btn4:hover {
+   background-position: right center;
+   color: #fff;
+   text-decoration: none;
+   color: black;
+ }
+.btn2{
+    position: relative;
+    text-decoration: none;
+    background-image: linear-gradient(to right, #114357 0%, #F29492 51%, #114357 100%);
+    color: white;
+    padding: 15px 30px;
+    width: 270px;
+    text-align: center;
+    font-size: 70%;
+    font-weight: 700;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border-radius: 10px;
+    display: block;
+    margin-top: 24px;
+    margin-left: -13px;
+    margin-bottom: 18px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .btn2:hover {
+   background-position: right center; 
+   color: #fff;
+   text-decoration: none;
+   color: black;
+  }
+.small-icon2{
+    position: absolute;
+    top: 19px;
+    left: 24px;
+    font-weight: 700;
+}
+form{
+    display: block;
+    margin-top: 7cm;
+}
+.Email , .mk,.TT1{
+    color: black;
+    padding-bottom: 24px;
+    font-weight: 500;
+    text-align: center;
+    font-weight: 900;
+}
+.Email{
+    margin-top: -1cm;
+}
+.Email2 ,.mk2{
+    font-family: 'Noto Sans JP', sans-serif;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    width: 500px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    resize: none;
+    padding-top: 14px ;
+    padding-left: 14px;
+    border: none;
+    font-weight: 700;
+    background-color: #eeefff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.Email2 ,.mk2:focus{
+    outline: none !important;
+}
+.dk a{
+    color: black;
+    padding-bottom: 24px;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.1s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.dk a:hover,
+.dk a:active{
+    color: white;
+}
+.btn3{
+    text-decoration: none;
+    color: white;
+    padding: 15px 10px;
+    margin: 10px 50px;
+    background-image: linear-gradient(to right, #1c9ab1 0%, #053136  51%, #07c1da  100%);
+    width: 176px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    display: block;
+    margin-left: auto;
+    margin-right:auto ;
+    font-size: 70%;
+    transition: 0.5s;
+    background-size: 200% auto;            
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+ .btn3:hover {
+   background-position: right center;
+   color: #fff;
+   text-decoration: none;
+   color: black;
+ }
+.login{
+    text-align: center;
+}
+.TT1{
+    margin-top: 0.5cm;
+    font-weight: 900;
+}
+.form-message{
+    color: darkred;
+    margin: 8px 34px;
+    text-align: start;
+    font-size: 80%;
+    font-weight: 900;
+}
+  .form-group{
+    display: flex;
+    flex-direction: column;
+  }

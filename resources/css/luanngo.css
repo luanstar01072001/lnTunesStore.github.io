@@ -1,0 +1,4111 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 20px;
+    color: #5a5a5a;
+    background-color: #ffffff;
+    text-rendering: optimizeLegibility;
+}
+body{
+    overflow-x: hidden;
+    /* background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);   */
+}
+header{
+    position: relative;
+    background-image:linear-gradient(to right, #1A2980 0%, #26D0CE  51%, #1A2980  100%);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    background-attachment: fixed;
+    width: 100%;
+    
+}
+.Logo{
+    max-width: 5cm;
+    float: left;
+    margin-top: -18px;
+    margin-left: 129px;
+}
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.menu{
+    float: right;
+    list-style: none; 
+    margin-right: 50px;
+    margin-top: 65px;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+    font-size: 110%;
+    font-weight: 700;
+    transition: all 0.4s;
+    padding: 3px 0;
+    width: 200px;
+    height: 200px;
+    padding: 4px;
+    border-radius: 3px;
+}
+.menu li{
+    display: inline-block;
+    margin-right: 30px;
+}
+.menu li a:hover,
+.menu li a:active{
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    box-shadow: 0 0 10px #eee;
+}
+.clearfix::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+.heading{
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    transform: translate(-40%, -60%);
+    width: 1140px;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 150%;
+    font-weight: 700;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    color: white;
+    line-height:60px ;
+    margin-bottom: 20px;
+}
+.btn{
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(to right, #1A2980 0%, #26D0CE  51%, #1A2980  100%);
+    padding: 15px 30px;
+    margin: 0 5px;
+    width: 140px;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+    font-weight: 700;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+ .btn:hover {
+   background-position: right center; 
+   color: #fff;
+   text-decoration: none;
+   color: black;
+ }
+.container-1 input#search{
+    position: absolute;
+    top: 295px;
+    left: 784px;
+    width: 300px;
+    height: 50px;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    border: none;
+    font-size: 10pt;
+    color:aliceblue;
+    padding-left: 35px;
+    border-radius: 1px;
+    font-weight: 700;
+    font-family: 'Noto Sans JP', sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container-1 ::placeholder {
+    color: aliceblue;
+}
+.btn7{
+    position: absolute;
+    top: 295px;
+    right: 360px;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    padding: 5px 5px;
+    margin: 0 5px;
+    width: 70px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 1px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.3s;
+}
+.small-icons{
+    margin-top: 10px;
+    color: aliceblue;
+}
+.Vidieodemo{
+    width: 100%;
+}
+.N1{
+    background-color:burlywood;
+    border: solid 2px black;
+    width: 6cm;
+    height: 3cm;
+}
+h2{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #5680E9;
+    font-size: 180%;
+    font-weight: 700;
+    text-align: center;
+    transition: all 0.3s;
+
+}
+h2::after{
+    content:"";
+    display: block;
+    width: 200px;
+    height: 3px;
+    background-color: #5680E9;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+h2:hover,
+h2:active{
+    color: #002661;
+    transform: scale(1.05);
+}
+
+
+.p-long{
+    text-align: center;
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 70%;
+    margin-left: 15%;
+    color: #8860D0;
+    line-height: 140%;
+    transition: all 0.5s;
+}
+.p-long:hover,
+.p-long:active{
+    color:black;
+}
+section{
+    padding: 50px;
+}
+.about-vidieo video{
+    width: 90%;
+    border-radius: 10px;
+    border: 4px solid #bccdf7;
+    box-shadow:0px 5px 15px 5px #5680E9 ;
+    transition: all 0.3s;
+}
+.about-vidieo video:focus{
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.about-vidieo{
+    position: relative;
+    margin-top: 50px;
+}
+.vidieo-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color:white;
+    transform: translate(-85%,-50%);
+    opacity: 0;
+    font-size: 0.45cm;
+    transition: all 0.5s;
+    width: 130px;
+    height: 50px;
+    font-weight: 900;
+    border-radius: 7px;
+}
+.about-vidieo:hover .vidieo-title,
+.about-vidieo:active .vidieo-title{
+    transform: translate(-85%,-260%);
+    opacity: 1;
+    color: black;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    box-shadow: 0 0 10px #eee;
+}
+.TTAN1{
+    position: relative;
+    height: 114px;
+    width: 250px;
+}
+.TTAN2{
+    position: relative;
+    height: 114px;
+    width: 250px;
+}
+.TTAN3{
+    position: relative;
+    height: 114px;
+    width: 250px;
+}
+.TTAN4{
+    position: relative;
+    height: 114px;
+    width: 250px;
+}
+.AN1{
+    margin-top: 10px;
+    height: 119px;
+    width: 247px;
+    border-radius: 10px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #eee;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.AN1{background-image: linear-gradient(to right, #0B486B 0%, #F56217  51%, #0B486B  100%)}
+.AN1:hover {
+   background-position: right center;
+   color: #fff;
+   text-decoration: none;
+ }
+ .luanngo{
+     max-width: 2.5cm;
+     position: absolute;
+     top: -29px;
+ }
+ .audio-title{
+    position: relative;
+    top: -119px;
+    left: 151px;
+    width: 98px;
+    height: 39px;
+    background-image: radial-gradient( circle farthest-corner at 16.5% 28.1%,  rgba(15,27,49,1) 0%, rgba(0,112,218,1) 90% );
+    box-shadow: 0 0 10px #eee;
+    text-align: center;
+    color:white;
+    font-size: 63%;
+    font-weight: 900;
+    border-radius: 7px;
+}
+.AN2{
+    margin-top: 10px;
+    height: 119px;
+    width: 247px;
+    border-radius: 10px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #eee;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.AN2 {background-image: linear-gradient(to right, #360033 0%, #0b8793  51%, #360033  100%)}
+.AN2:hover {
+   background-position: right center;
+   color: #fff;
+   text-decoration: none;
+ }
+ .luanngo1{
+     max-width: 2.5cm;
+     position: absolute;
+     top: -29px;
+ }
+ .audio-title1{
+    position: relative;
+    top: -119px;
+    left: 151px;
+    width: 98px;
+    height: 39px;
+    background-image: radial-gradient( circle farthest-corner at 16.5% 28.1%,  rgba(15,27,49,1) 0%, rgba(0,112,218,1) 90% );
+    box-shadow: 0 0 10px #eee;
+    text-align: center;
+    color:white;
+    font-size: 63%;
+    font-weight: 900;
+    border-radius: 7px;
+}
+.AN3{
+    margin-top: 10px;
+    height: 119px;
+    width: 247px;
+    border-radius: 10px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #eee;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.AN3 {background-image: linear-gradient(to right, #30E8BF 0%, #FF8235  51%, #30E8BF  100%)}
+.AN3:hover {
+   background-position: right center;
+   color: #fff;
+   text-decoration: none;
+ }
+ .luanngo2{
+     max-width: 2.5cm;
+     position: absolute;
+     top: -29px;
+ }
+ .audio-title2{
+    position: relative;
+    top: -119px;
+    left: 151px;
+    width: 98px;
+    height: 39px;
+    background-image: radial-gradient( circle farthest-corner at 16.5% 28.1%,  rgba(15,27,49,1) 0%, rgba(0,112,218,1) 90% );
+    box-shadow: 0 0 10px #eee;
+    text-align: center;
+    color:white;
+    font-size: 63%;
+    font-weight: 900;
+    border-radius: 7px;
+}
+.AN4{
+    margin-top: 13px;
+    height: 119px;
+    width: 247px;
+    border-radius: 10px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #eee;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.AN4 {background-image: linear-gradient(to right, #114357 0%, #F29492  51%, #114357  100%)}
+.AN4:hover {
+   background-position: right center;
+   color: #fff;
+   text-decoration: none;
+ }
+ .luanngo3{
+     max-width: 2.5cm;
+     position: absolute;
+     top: -29px;
+ }
+ .audio-title3{
+    position: relative;
+    top: -119px;
+    left: 151px;
+    width: 98px;
+    height: 39px;
+    background-image: radial-gradient( circle farthest-corner at 16.5% 28.1%,  rgba(15,27,49,1) 0%, rgba(0,112,218,1) 90% );
+    box-shadow: 0 0 10px #eee;
+    text-align: center;
+    color:white;
+    font-size: 63%;
+    font-weight: 900;
+    border-radius: 7px;
+}
+.about-section{
+    margin-top: -13.5cm;
+    margin-left: 4cm;
+}
+/***************nghesicunam****************/
+.nghesinam-section{
+    /* background-color: #f4f4f4 ; */
+    background-image: radial-gradient( circle 993px at 0.5% 50.5%,  rgba(137,171,245,0.37) 0%, rgba(245,247,252,1) 100.2% );
+}
+.nghesinam-section h2{
+    width: 14cm;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    height: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.p-long1{
+    text-align: center;
+    font-size: 22px;
+    width: 70%;
+    margin-top: -40px;
+    margin-left: 15%;
+    color: #5680E9;
+    line-height: 140%;
+    transition: all 0.5s;
+}
+.p-long1:hover,
+.p-long1:active{
+    color:black;
+}
+.p-long2:after{
+    content:"";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #5680E9;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+.p-long2{
+     text-align: center;
+    font-size: 22px;
+    width: 70%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 15%;
+    color: #8860D0;
+    line-height: 140%;
+}
+.about-vidieo1 video{
+    width: 90%;
+    border-radius: 10px;
+    border: 4px solid #bccdf7;
+    box-shadow:0px 5px 15px 5px #8860D0 ;
+    transition: all 0.3s;
+}
+.about-vidieo1 video:focus{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    outline: none;
+}
+.title-VD{
+    color: #5680E9;
+    text-align: center;
+    font-weight: 900;
+    margin-left: -20px;
+}
+.TTAN5{
+    position: relative;
+    width: 192px;
+    height: 146px;
+}
+.AN5{
+    width: 191px;
+    background-color: #002661;
+    height: 110px;
+    border-radius: 10px;
+    border-bottom-left-radius:30px ;
+    border-bottom-right-radius:30px ;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: block;
+}
+.AN5 {background-image: linear-gradient(to right, #16A085 0%, #F4D03F  51%, #16A085  100%)}
+.AN5:hover {
+   background-position: right center;
+   color: #fff;
+   text-decoration: none;
+ }
+ .luanngo5{
+     max-width: 2.5cm;
+     position: absolute;
+     top: -29px;
+ }
+ .title-AN5{
+    position: absolute;
+    top: 0px;
+    left: 119px;
+    width: 72px;
+    height: 39px;
+    background-image: radial-gradient(circle at 16.5% 28.1%, rgb(15, 27, 49) 0%, rgb(0, 112, 218) 90%);
+    box-shadow: rgb(238 238 238) 0px 0px 10px;
+    text-align: center;
+    color: white;
+    font-size: 58%;
+    font-weight: 900;
+    border-radius: 7px;
+}
+.TTAN6{
+    position: relative;
+    width: 192px;
+    height: 146px;
+}
+.AN6{
+    width: 191px;
+    background-color: #002661;
+    height: 110px;
+    border-radius: 10px;
+    border-bottom-left-radius:30px ;
+    border-bottom-right-radius:30px ;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: block;
+}
+.AN6 {background-image: linear-gradient(to right, #1c92d2 0%, #082f36  51%, #1c92d2  100%)}
+.AN6:hover {
+   background-position: right center;
+   color: #fff;
+   text-decoration: none;
+ }
+ .luanngo6{
+     max-width: 2.5cm;
+     position: absolute;
+     top: -29px;
+ }
+ .title-AN6{
+    position: absolute;
+    top: 0px;
+    left: 119px;
+    width: 72px;
+    height: 39px;
+    background-image: radial-gradient(circle at 16.5% 28.1%, rgb(15, 27, 49) 0%, rgb(0, 112, 218) 90%);
+    box-shadow: rgb(238 238 238) 0px 0px 10px;
+    text-align: center;
+    color: white;
+    font-size: 58%;
+    font-weight: 900;
+    border-radius: 7px;
+}
+.TTAN7{
+    position: relative;
+    width: 192px;
+    height: 146px;
+}
+.AN7{
+    width: 191px;
+    background-color: #002661;
+    height: 110px;
+    border-radius: 10px;
+    border-bottom-left-radius:30px ;
+    border-bottom-right-radius:30px ;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: block;
+}
+.AN7 {background-image: linear-gradient(to right, #3A1C71 0%, #D76D77  51%, #3A1C71  100%)}
+.AN7:hover {
+   background-position: right center;
+   color: #fff;
+   text-decoration: none;
+ }
+ .luanngo7{
+     max-width: 2.5cm;
+     position: absolute;
+     top: -29px;
+ }
+ .title-AN7{
+    position: absolute;
+    top: 0px;
+    left: 119px;
+    width: 72px;
+    height: 39px;
+    background-image: radial-gradient(circle at 16.5% 28.1%, rgb(15, 27, 49) 0%, rgb(0, 112, 218) 90%);
+    box-shadow: rgb(238 238 238) 0px 0px 10px;
+    text-align: center;
+    color: white;
+    font-size: 58%;
+    font-weight: 900;
+    border-radius: 7px;
+}
+.TTAN8{
+    position: relative;
+    width: 192px;
+    height: 146px;
+}
+.AN8{
+    width: 191px;
+    background-color: #002661;
+    height: 110px;
+    border-radius: 10px;
+    border-bottom-left-radius:30px ;
+    border-bottom-right-radius:30px ;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: block;
+}
+.AN8 {background-image: linear-gradient(to right, #1faf90 0%, #d65b0e  51%, #03cea2  100%)}
+.AN8:hover {
+   background-position: right center;
+   color: #fff;
+   text-decoration: none;
+ }
+ .luanngo8{
+     max-width: 2.5cm;
+     position: absolute;
+     top: -29px;
+ }
+ .title-AN8{
+    position: absolute;
+    top: 0px;
+    left: 119px;
+    width: 72px;
+    height: 39px;
+    background-image: radial-gradient(circle at 16.5% 28.1%, rgb(15, 27, 49) 0%, rgb(0, 112, 218) 90%);
+    box-shadow: rgb(238 238 238) 0px 0px 10px;
+    text-align: center;
+    color: white;
+    font-size: 58%;
+    font-weight: 900;
+    border-radius: 7px;
+}
+.TTAN9{
+    position: relative;
+    width: 192px;
+    height: 146px;
+}
+.AN9{
+    width: 191px;
+    background-color: #002661;
+    height: 110px;
+    border-radius: 10px;
+    border-bottom-left-radius:30px ;
+    border-bottom-right-radius:30px ;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: block;
+}
+.AN9 {background-image: linear-gradient(to right, #4b1157 0%, #949227  51%, #573e11  100%)}
+.AN9:hover {
+   background-position: right center;
+   color: #fff;
+   text-decoration: none;
+ }
+ .luanngo9{
+     max-width: 2.5cm;
+     position: absolute;
+     top: -29px;
+ }
+ .title-AN9{
+    position: absolute;
+    top: 0px;
+    left: 119px;
+    width: 72px;
+    height: 39px;
+    background-image: radial-gradient(circle at 16.5% 28.1%, rgb(15, 27, 49) 0%, rgb(0, 112, 218) 90%);
+    box-shadow: rgb(238 238 238) 0px 0px 10px;
+    text-align: center;
+    color: white;
+    font-size: 58%;
+    font-weight: 900;
+    border-radius: 7px;
+}
+.TTAN10{
+    position: relative;
+    width: 192px;
+    height: 146px;
+}
+.AN10{
+    width: 191px;
+    background-color: #002661;
+    height: 110px;
+    border-radius: 10px;
+    border-bottom-left-radius:30px ;
+    border-bottom-right-radius:30px ;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: block;
+}
+.AN10{background-image: linear-gradient(to right, #43C6AC 0%, #F8FFAE  51%, #43C6AC  100%)}
+.AN10:hover {
+   background-position: right center;
+   color: #fff;
+   text-decoration: none;
+ }
+ .luanngo10{
+     max-width: 2.5cm;
+     position: absolute;
+     top: -29px;
+ }
+ .title-AN10{
+    position: absolute;
+    top: 0px;
+    left: 119px;
+    width: 72px;
+    height: 39px;
+    background-image: radial-gradient(circle at 16.5% 28.1%, rgb(15, 27, 49) 0%, rgb(0, 112, 218) 90%);
+    box-shadow: rgb(238 238 238) 0px 0px 10px;
+    text-align: center;
+    color: white;
+    font-size: 58%;
+    font-weight: 900;
+    border-radius: 7px;
+}
+.TTAN11{
+    position: relative;
+    width: 192px;
+    height: 146px;
+}
+.AN11{
+    width: 191px;
+    background-color: #002661;
+    height: 110px;
+    border-radius: 10px;
+    border-bottom-left-radius:30px ;
+    border-bottom-right-radius:30px ;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: block;
+}
+.AN11{background-image: linear-gradient(to right, #c0c0aa 0%, #1cefff  51%, #c0c0aa  100%)}
+.AN11:hover {
+   background-position: right center;
+   color: #fff;
+   text-decoration: none;
+ }
+ .luanngo11{
+     max-width: 2.5cm;
+     position: absolute;
+     top: -29px;
+ }
+ .title-AN11{
+    position: absolute;
+    top: 0px;
+    left: 119px;
+    width: 72px;
+    height: 39px;
+    background-image: radial-gradient(circle at 16.5% 28.1%, rgb(15, 27, 49) 0%, rgb(0, 112, 218) 90%);
+    box-shadow: rgb(238 238 238) 0px 0px 10px;
+    text-align: center;
+    color: white;
+    font-size: 58%;
+    font-weight: 900;
+    border-radius: 7px;
+}
+.TTAN12{
+    position: relative;
+    width: 192px;
+    height: 146px;
+}
+.AN12{
+    width: 191px;
+    background-color: #002661;
+    height: 110px;
+    border-radius: 10px;
+    border-bottom-left-radius:30px ;
+    border-bottom-right-radius:30px ;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: block;
+}
+.AN12 {background-image: linear-gradient(to right, #00c3ff 0%, #b4b459  51%, #00c3ff  100%)}
+.AN12:hover {
+   background-position: right center;
+   color: #fff;
+   text-decoration: none;
+ }
+ .luanngo12{
+     max-width: 2.5cm;
+     position: absolute;
+     top: -29px;
+ }
+ .title-AN12{
+    position: absolute;
+    top: 0px;
+    left: 119px;
+    width: 72px;
+    height: 39px;
+    background-image: radial-gradient(circle at 16.5% 28.1%, rgb(15, 27, 49) 0%, rgb(0, 112, 218) 90%);
+    box-shadow: rgb(238 238 238) 0px 0px 10px;
+    text-align: center;
+    color: white;
+    font-size: 58%;
+    font-weight: 900;
+    border-radius: 7px;
+}
+/*...............Nghệ Sĩ Xuất Sắc P3...........*/
+.nghesinotbat-section{
+    background: rgb(18,106,252);
+    background-image: linear-gradient(176deg, rgba(18,106,252,0.5) 0%, rgba(27,72,171,0.5) 52%, rgba(187,60,185,0.5) 88%, rgba(169,62,184,0.5) 100%),url(../img/Nền\ 3.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.nghesinotbat-section h2{
+    margin-bottom: 50px;
+    width: 11cm;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    height: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+cite img{
+    height: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 5px;
+
+}
+blockquote{
+    width: 95%;
+    position: relative;
+    font-style: italic;
+    line-height: 140%;
+    color: white;
+}
+blockquote::before{
+    content: "\201C";
+    display: block;
+    font-size: 400%;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+
+}
+cite{
+    display: block;
+    color:black;
+    margin-top: 25px;
+    font-weight: 900;
+}
+/*-------------MUSIC*************************************/
+.music-section{
+    background-image: radial-gradient( circle 993px at 0.5% 50.5%,  rgba(137,171,245,0.37) 0%, rgba(245,247,252,1) 100.2% );
+}
+.music-section h2{
+    width: 6cm;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    height: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.AN13,.AN14,.AN15,.AN16,.AN17,.AN18{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.4s;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;   
+}
+.AN13{
+    margin-left: -4cm;
+    background-image: url(../img/Celebrity\ -\ Iu\ .png);
+
+}
+.AN14{
+    margin-left: -2.5cm;
+    background-image: url(../img/Cry\ For\ Me\ -\ Twice.png);
+}
+.AN15{
+    margin-left: -1cm;
+    background-image: url(../img/Like\ Water\ -\ Wendy.png);
+}
+.AN18{
+    margin-left: 3.5cm;
+    background-image: url(../img/This\ Is\ What\ I\ Am\ -\ Lim\ Changjung\ .png);
+}
+.AN17{
+    margin-left: 2cm;
+    background-image: url(../img/The\ Morass\ -\ Lee\ Yejoon.png);
+}
+.AN16{
+    margin-left: 0.5cm;
+    background-image: url(../img/Lilac\ -\ IU.png);
+}
+.AN13:hover,
+.AN13:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 5px 15px 5px #5680E9  ;
+}
+.AN14:hover,
+.AN14:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 5px 15px 5px #5680E9  ;
+}
+.AN15:hover,
+.AN15:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 5px 15px 5px #5680E9  ;
+}
+.AN16:hover,
+.AN16:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 5px 15px 5px #5680E9  ;
+}
+.AN17:hover,
+.AN17:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 5px 15px 5px #5680E9 ;
+}
+.AN18:hover,
+.AN18:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 5px 15px 5px #5680E9  ;
+}
+/*AN2*/
+.AN19,.AN20,.AN21,.AN22,.AN23,.AN24{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.4s;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;   
+}
+.AN19{
+    margin-left: -4cm;
+    background-image: url(../img/Feel\ Special\ -\ Twice.png);
+}
+
+.AN20{
+    margin-left: -2.5cm;
+    background-image: url(../img/Solo\ -\ Jennie.png);
+}
+.AN21{
+    margin-left: -1cm;
+    background-image: url(../img/Psycho\ -\ Red\ Velvet.png);
+}
+.AN24{
+    margin-left: 3.5cm;
+
+    background-image: url(../img/Dyanamite\ -\ BTS.png);
+}
+.AN23{
+    margin-left: 2cm;
+    background-image: url(../img/As\ If\ It\ your\ last\ -\ Blackpink.png);
+}
+.AN22{
+    margin-left: 0.5cm;
+    background-image: url(../img/All\ with\ you\ -\ Taeyeon.png);
+
+}
+.AN19:hover,
+.AN19:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 5px 15px 5px #8860D0;
+}
+.AN20:hover,
+.AN20:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 5px 15px 5px #8860D0;
+}
+.AN21:hover,
+.AN21:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 5px 15px 5px #8860D0;
+}
+.AN22:hover,
+.AN22:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 5px 15px 5px #8860D0;
+}
+.AN23:hover,
+.AN23:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 5px 15px 5px #8860D0;
+}
+.AN24:hover,
+.AN24:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 5px 15px 5px #8860D0;
+}
+/*****AN3***********/
+.AN25,.AN26,.AN27,.AN28,.AN29,.AN30{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.4s;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.AN25{
+    margin-left: -4cm;
+    background-image: url(../img/I\ cant\ stop\ me\ -\ Twice.png);
+}
+.AN26{
+    margin-left: -2.5cm;
+    background-image: url(../img/Divine\ -\ Snsd.png);
+}
+.AN27{
+    margin-left: -1cm;
+    background-image: url(../img/Boy\ With\ Luv\ -\ BTS.png);
+}
+.AN30{
+    margin-left: 3.5cm;
+
+    background-image: url(../img/Bambi\ -\ Baekhyun.png);
+}
+.AN29{
+    margin-left: 2cm;
+    background-image: url(../img/Nonstop\ -\ Oh\ My\ Girl.png);
+}
+.AN28{
+    margin-left: 0.5cm;
+    background-image: url(../img/Make\ A\ Wish\ \(Birthday\ Song\)\ -\ NCT\ U.png);
+
+}
+.AN25:hover,
+.AN25:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 5px 15px 5px black ;
+}
+.AN26:hover,
+.AN26:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 5px 15px 5px black ;
+}
+.AN27:hover,
+.AN27:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 5px 15px 5px black ;
+}
+.AN28:hover,
+.AN28:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 5px 15px 5px black ;
+}
+.AN29:hover,
+.AN29:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 5px 15px 5px black ;
+}
+.AN30:hover,
+.AN30:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 5px 15px 5px black ;
+}
+/*****AN4***************/
+.AN31,.AN32,.AN33,.AN34,.AN35,.AN36{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.4s;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;   
+}
+.AN31{
+    margin-left: -4cm;
+    background-image: url(../img/Next\ Level\ -\ Aespa.png);
+
+}
+.AN32{
+    margin-left: -2.5cm;
+    background-image: url(../img/In\ The\ Morning\ -\ ITZY.png);
+}
+.AN33{
+    margin-left: -1cm;
+    background-image: url(../img/Butter-BTS.png);
+}
+.AN36{
+    margin-left: 3.5cm;
+    background-image: url(../img/Done\ For\ Me\ -\ Punch.png);
+}
+.AN35{
+    margin-left: 2cm;
+    background-image: url(../img/Forgetting\ You\ -\ Davichi.png);
+}
+.AN34{
+    margin-left: 0.5cm;
+    background-image: url(../img/I\ -\ Taeyeon.png);
+}
+.AN31:hover,
+.AN31:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 5px 15px 5px #5680E9  ;
+}
+.AN36:hover,
+.AN36:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 5px 15px 5px #5680E9  ;
+}
+.AN32:hover,
+.AN32:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 5px 15px 5px #5680E9  ;
+}
+.AN33:hover,
+.AN33:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 5px 15px 5px #5680E9  ;
+}
+.AN34:hover,
+.AN34:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 5px 15px 5px #5680E9 ;
+}
+.AN35:hover,
+.AN35:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 5px 15px 5px #5680E9  ;
+}
+/*****AN5***************/
+.AN37,.AN38,.AN39,.AN40,.AN41,.AN42{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.4s;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;   
+}
+.AN37{
+    margin-left: -4cm;
+    background-image: url(../img/Adios\ -\ Everglow.png);
+
+}
+.AN38{
+    margin-left: -2.5cm;
+    background-image: url(../img/Don_T\ Know\ What\ To\ Do\ -\ BlackPink.png);
+}
+.AN39{
+    margin-left: -1cm;
+    background-image: url(../img/Untitled\,\ 2014\ -\ G-Dragon.png);
+}
+.AN42{
+    margin-left: 3.5cm;
+    background-image: url(../img/Always\ \(OST\ Descendants\ Of\ The\ Sun\)\ -\ Yoon\ Mirae.png);
+}
+.AN41{
+    margin-left: 2cm;
+    background-image: url(../img/I\ Got\ A\ Boy\ -\ SNSD.png);
+}
+.AN40{
+    margin-left: 0.5cm;
+    background-image: url(../img/Bad\ Boy\ -\ Red\ Velvet.png);
+}
+.AN37:hover,
+.AN37:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 5px 15px 5px #5680E9  ;
+}
+.AN38:hover,
+.AN38:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 5px 15px 5px #5680E9  ;
+}
+.AN39:hover,
+.AN39:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 5px 15px 5px #5680E9  ;
+}
+.AN40:hover,
+.AN40:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 5px 15px 5px #5680E9  ;
+}
+.AN41:hover,
+.AN41:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 5px 15px 5px #5680E9 ;
+}
+.AN42:hover,
+.AN42:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 5px 15px 5px #5680E9  ;
+}
+/*****AN6***************/
+.AN43,.AN44,.AN45,.AN46,.AN47,.AN48{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.4s;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;   
+}
+.AN43{
+    margin-left: -4cm;
+    background-image: url(../img/Back\ In\ Time\ \(The\ Moon\ Embracing\ The\ Sun\ OST\)\ -\ Lyn.png);
+
+}
+.AN44{
+    margin-left: -2.5cm;
+    background-image: url(../img/Gravity\ -\ Tae\ Yeon.png);
+}
+.AN45{
+    margin-left: -1cm;
+    background-image: url(../img/My\ Love\ \(Moon\ Lovers\ Scarlet\ Heart\ Ryo\ OST\)\ -\ Lee\ Hi.png);
+}
+.AN48{
+    margin-left: 3.5cm;
+    background-image: url(../img/Sick\ Enough\ To\ Die\ -\ MC\ Mong.png);
+}
+.AN47{
+    margin-left: 2cm;
+    background-image: url(../img/With\ You\ -\ Lyn.png);
+}
+.AN46{
+    margin-left: 0.5cm;
+    background-image: url(../img/Remember\ Me\ \(Hotel\ Del\ Luna\ OST\)\ -\ Gummy.png);
+}
+.AN43:hover,
+.AN43:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 5px 15px 5px #5680E9  ;
+}
+.AN44:hover,
+.AN44:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 5px 15px 5px #5680E9  ;
+}
+.AN45:hover,
+.AN45:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 5px 15px 5px #5680E9  ;
+}
+.AN46:hover,
+.AN46:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 5px 15px 5px #5680E9  ;
+}
+.AN47:hover,
+.AN47:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 5px 15px 5px #5680E9 ;
+}
+.AN48:hover,
+.AN48:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 5px 15px 5px #5680E9  ;
+}
+/*------------------ Nghệ Sĩ**********************/
+.artist-section h2 {
+    margin-bottom: 50px;
+    width: 6cm;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    height: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.artist-showcase{
+    margin-left: 3%;
+
+}
+.artist-showcase li{
+    list-style: none;
+    float: left;
+    width: 25%;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+.artist-showcase li .img-artist:hover,
+.artist-showcase li .img-artist:active{
+    transform: scale(0.9);
+}
+.img-artist{
+    width: 200px;
+    cursor: pointer;
+    transition: all 0.35s ease 0s;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+figcaption{
+    color: #5680E9;
+    font-weight: 900;
+    font-size: 120%;
+    cursor: pointer;
+
+}
+/*-------------Premium***********************/
+.premium-section{
+    background-image: radial-gradient( circle 993px at 0.5% 50.5%,  rgba(137,171,245,0.37) 0%, rgba(245,247,252,1) 100.2% );
+}
+.premium-section h2{
+    margin-bottom: 60px;
+    width: 12cm;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    height: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.premium-box{
+    background-color: #eeefff;
+    width: 90%;
+    height: 660px;
+    box-shadow: 3px 5px 10px #e0e0e0;
+    position: relative;
+}
+.premium-box h3{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.premium-box h3{
+    margin-bottom: 15px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color:white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 244px;
+    height: 71px;
+    background-image: linear-gradient(to right, #1A2980 0%, #26D0CE  51%, #1A2980  100%);
+    border-top-left-radius:10px ;
+    border-top-right-radius:10px ;
+}
+.premium-much{
+    color: #5680E9;
+    font-size: 110%;
+    font-weight: 700;
+    text-align: center;
+}
+.premium-much span{
+    font-size: 80%;
+    color: black;
+}
+.premium-box ul li{
+    margin-left: 20%;
+    list-style: none;
+    margin: 20px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 80%;
+}
+.small-icon{
+    color: black;
+    font-size: 120%;
+    margin-right: 10px;
+}
+.btn1 , .btn2 ,.btn3,.btn4{
+    text-decoration: none;
+    background-image: linear-gradient(to right, #1A2980 0%, #26D0CE  51%, #1A2980  100%);
+    color: white;
+    padding: 15px 30px;
+    margin: 0 5px;
+    width: 170px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 17%;
+    font-size: 70%;
+    font-weight: 700;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border-radius: 10px;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+ .btn1:hover {
+   background-position: right center; 
+   color: #fff;
+   text-decoration: none;
+   color: black;
+ }
+.btn2:hover {
+  background-position: right center; 
+  color: #fff;
+  text-decoration: none;
+  color: black;
+}
+.btn3:hover {
+  background-position: right center; 
+  color: #fff;
+  text-decoration: none;
+  color: black;
+}
+.btn4:hover {
+  background-position: right center; 
+  color: #fff;
+  text-decoration: none;
+  color: black;
+}
+.btn1{
+    position: absolute;
+    top: 15cm;
+}
+.btn2{
+    position: absolute;
+    top: 15cm;
+}
+.btn3{
+    position: absolute;
+    top: 15cm;
+}
+.btn4{
+    position: absolute;
+    top: 15cm;
+}
+.btn5{
+    text-decoration: none;
+    color:white;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    padding: 5px 5px;
+    border-radius: 30px;
+    margin: 0 5px;
+    width: 90px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 50%;
+    position: absolute;
+    top: 1cm;
+    left: 3.64cm;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 13px 0 rgba(0, 0, 0, 0.19);
+}
+/*------------------End----------------------*/
+.end-section{
+    background-image: linear-gradient(to right, #1A2980 0%, #26D0CE  51%, #1A2980  100%);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.thongtin{
+    width: 400px;
+    height: 129px;
+    list-style: none;
+    color: #f4f4f4;
+    line-height: 200%;
+    word-spacing: 1px;
+    font-size: 90%;
+    font-weight: 700;
+    border-radius: 13px;
+    background-image: linear-gradient( -20deg, #92FFC0 10%, #002661 100%);
+    padding-left: 31px;
+    padding-top: 9px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.thongtin .small-icon{
+    color:black;
+    transition: all 0.15s;
+}
+.thongtin .small-icon:hover,
+.thongtin .small-icon:active{
+    transform: scale(1.3);
+    color:white;
+}
+.social-icons{
+    margin-top: 30px;
+    list-style: none;
+}
+.social-icons a{
+    text-decoration: none;
+}
+.social-icons li{
+    display: inline-block;
+    font-size: 170%;
+    margin-left: 20px;
+    width: 58px;
+    height: 58px;
+    color: white;
+    padding-left: 14px;
+    background: rgb(238 238 238);
+    border-radius: 50%;
+    padding-top: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.social-icons li i{
+    transition: all 0.3s;
+}
+.social-icons li i:hover,
+.social-icons li i:active{
+    transform: scale(0.8);
+}
+/***************Form******************/
+form{
+    background-image: linear-gradient( 100deg, #92FFC0 10%, #002661 180%);
+    margin-left: 40%;
+    width: 50%;
+    padding: 20px;
+    margin-bottom: 50px;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+label{
+    font-size: 110%;
+    color: black;
+    font-weight: 700;
+}
+input,textarea{
+    outline: none;
+    padding: 20px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+textarea{
+    resize: none;
+    margin-left: 40%;
+    margin-top: -10%;
+    width: 71%;
+    font-size: 60%;
+    font-family: 'Noto Sans JP', sans-serif;
+    transition: all 0.15s;
+    color: black;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    font-weight: 900;
+    border: none;
+}
+input{
+    height: 50px;
+
+}
+input[type=text], input[type=email]{
+    width: 70%;
+    font-size: 60%;
+    font-family: 'Noto Sans JP', sans-serif;
+    transition: all 0.15s;
+    color:black;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    font-weight: 900;
+    position: absolute;
+    left: 35%;
+    width: 5.25cm;
+    border: none;
+}  
+textarea::placeholder {
+    color: aliceblue;
+    font-weight: 900;
+}
+.hihi input::placeholder{
+    color: aliceblue;
+    font-weight: 900;
+}
+form .row:last-child{
+    margin-left: 20%;
+}
+ 
+input[type=submit]{
+    font-weight: 700;
+    font-size: 100%;
+    border-radius: 5px;
+    width: 60%;
+}
+form .row{
+    margin-bottom:20px ;
+}
+.lb1{
+    font-size: 110%;
+    color: black;
+    font-weight: 700;
+}
+.btn6{
+    text-decoration: none;
+    background-image: linear-gradient(to right, #134E5E 0%, #71B280  51%, #134E5E  100%);
+    color: white;
+    padding: 15px 30px;
+    margin: 0 5px;
+    width: 202px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 16%;
+    font-size: 70%;
+    font-weight: 700;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border-radius: 10px;
+    transition: 0.5s;
+    display: block;
+    border: none;
+}
+ .btn6:hover {
+   background-position: right center; 
+   color: #fff;
+   text-decoration: none;
+   color: black;
+ }
+/*------------------FOOTER****************/
+footer{
+    height: 530.4px;
+    background-color: black;
+    padding: 40px 0 50px;
+  }
+  .A6{
+    width: 132px;
+    margin: 0;
+    margin-top: -1cm;
+  }
+  .about-end{
+    width: 195px;
+    height: 346px;
+  }
+  .luan1{
+    color: white;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #919496;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.4;
+    margin-top: 0.5cm;
+  }
+  .about-end p{
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    color: white;
+    transition: all 0.2s;
+  }
+  .about-end p:hover,
+  .about-end p:active{
+    color: #5680E9;
+  }
+  .TT12,.TT13,.TT14,.TT15,.TT16,.TT17,.TT18,.TT19,.TT20,.TT21,.TT22{
+    margin-top: 0.8cm;
+  }
+  .social-icons1{
+    margin-top: 15px;
+    list-style: none;
+  }
+  .social-icons1 li{
+    display: inline-block;
+    font-size: 200%;
+    margin-left: 20px;
+    color: white;
+  }
+  .social-icons1 li i{
+    transition: all 0.3s;
+  }
+  .social-icons1 a{
+    text-decoration: none;
+}
+  .social-icons1 li i:hover,
+  .social-icons1 li i:active{
+    transform: scale(0.9);
+    color: rgb(85, 81, 81) ;
+  }
+  .end1{
+    width: 1170px;
+    height: 39.2px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .menu1{
+    list-style: none; 
+    margin-left: 20px;
+  }
+  .menu1 li a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    transition:all 0.2s ease-in-out;
+    padding: 3px 0;
+  }
+  .menu1 li{
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .menu1 li a:hover,
+  .menu1 li a:active{
+    color:#5680E9 ;
+  }
+  .TT23,span{
+    float: right;
+    font-size: 14px;
+    color: white;
+  }
+  .TT23{
+    margin-top: -16px;
+    margin-right: 50px;
+  }
+  .TT24{
+      text-align: center;
+      font-weight: 900;
+      font-size: 100%;
+      color:black;
+      position: relative;
+      top: 32px;
+  }
+  .TT24-end{
+      width: 100%;
+      height: 82px;
+      background-color: white;
+  }
+/******Sticky*/
+.sticky{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+    height: 85px;
+}
+.sticky .Logo{
+    width: 180px;
+    margin-top: -50px;
+    margin-bottom: -70px;
+}
+.sticky .menu{
+    margin-top: 20px;
+}
+.sticky .mobile-nav-icon{
+    top: 25px;
+}
+/************************toltip**************/
+.tooltip{
+    position: relative;
+    display: inline-block;
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 113px;
+    height: 37px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 6px;
+    right: -21%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+    font-weight: bold;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.TTAN13{
+    max-width: 50px;
+    position: absolute;
+    top: -4px;
+    left: -155px;
+}
+.tooltip .tooltiptext1{
+    visibility: hidden;
+    width: 150px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    right: -9%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptext1 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.TTAN14{
+    max-width: 50px;
+    position: absolute;
+    top: -4px;
+    left: -99px;
+}
+.tooltip .tooltiptext2{
+    visibility: hidden;
+    width: 150px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 6px;
+    right: -6%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptext2 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.TTAN15{
+    max-width: 50px;
+    position: absolute;
+    top: -3px;
+    left: -41px;
+}
+.tooltip .tooltiptext3{
+    visibility: hidden;
+    width: 150px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 4px;
+    right: -4%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptext3 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.TTAN16{
+    max-width: 50px;
+    position: absolute;
+    top: -4px;
+    left: 15px;
+}
+.tooltip .tooltiptext4{
+    visibility: hidden;
+    width: 122px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -4px;
+    right: -2%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptext4 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.TTAN17{
+    max-width: 50px;
+    position: absolute;
+    top: -3px;
+    left: 72px;
+}
+.tooltip .tooltiptext5{
+    visibility: hidden;
+    width: 91px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    right: 0%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptext5 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.TTAN18{
+    max-width: 50px;
+    position: absolute;
+    top: -4px;
+    left: 128px;
+}
+.tooltip .tooltiptext6{
+    visibility: hidden;
+    width: 150px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    right: -19%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptext6 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.TTAN19{
+    max-width: 50px;
+    position: absolute;
+    top: -4px;
+    left: -155px;
+}
+.tooltip .tooltiptext7{
+    visibility: hidden;
+    width: 150px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 4px;
+    right: -9%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptext7 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.TTAN20{
+    max-width: 50px;
+    position: absolute;
+    top: -4px;
+    left: -99px;
+}
+.tooltip .tooltiptext8{
+    visibility: hidden;
+    width: 150px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    right: -6%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptext8 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.TTAN21{
+    max-width: 50px;
+    position: absolute;
+    top: -4px;
+    left: -42px;
+}
+.tooltip .tooltiptext9{
+    visibility: hidden;
+    width: 128px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: -2%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptext9 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.TTAN22{
+    max-width: 50px;
+    position: absolute;
+    top: -4px;
+    left: 15px;
+}
+.tooltip .tooltiptext10{
+    visibility: hidden;
+    width: 140px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -7px;
+    right: -1%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptext10 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.TTAN23{
+    max-width: 50px;
+    position: absolute;
+    top: -4px;
+    left: 71px;
+}
+.tooltip .tooltiptext11{
+    visibility: hidden;
+    width: 150px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    right: -3%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptext11 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.TTAN24{
+    max-width: 50px;
+    position: absolute;
+    top: -4px;
+    left: 128px;
+}
+.tooltip .tooltiptext12{
+    visibility: hidden;
+    width: 137px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: -12%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptext12 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.TTAN25{
+    max-width: 50px;
+    position: absolute;
+    top: -4px;
+    left: -155px;
+}
+.tooltip .tooltiptext13{
+    visibility: hidden;
+    width: 150px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    right: -9%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptext13 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.TTAN26{
+    max-width: 50px;
+    position: absolute;
+    top: -4px;
+    left: -99px;
+}
+.tooltip .tooltiptext14{
+    visibility: hidden;
+    width: 163px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 4px;
+    right: -7%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+}
+.tooltip:hover .tooltiptext14 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.TTAN27{
+    max-width: 50px;
+    position: absolute;
+    top: -4px;
+    left: -42px;
+}
+.tooltip .tooltiptext15{
+    visibility: hidden;
+    width: 139px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -8px;
+    right: 0%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptext15 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.TTAN28{
+    max-width: 50px;
+    position: absolute;
+    top: -4px;
+    left: 14px;
+}
+.tooltip .tooltiptext16{
+    visibility: hidden;
+    width: 166px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 4px;
+    right: -4%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptext16 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.TTAN29{
+    max-width: 50px;
+    position: absolute;
+    top: -4px;
+    left: 72px;
+}
+.tooltip .tooltiptext17{
+    visibility: hidden;
+    width: 150px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 3px;
+    right: -3%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptext17 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.TTAN30{
+    max-width: 50px;
+    position: absolute;
+    top: -4px;
+    left: 128px;
+}
+.tooltip .tooltiptext24 {
+    visibility: hidden;
+    width: 97px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -1px;
+    right: -21%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+    font-weight: bold;
+}
+.tooltip:hover .tooltiptext24 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.TTAN37{
+    max-width: 50px;
+    position: absolute;
+    top: -4px;
+    left: -155px;
+}
+.tooltip .tooltiptext25{
+    visibility: hidden;
+    width: 122px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    right: -9%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptext25 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.TTAN38{
+    max-width: 50px;
+    position: absolute;
+    top: -4px;
+    left: -99px;
+}
+.tooltip .tooltiptext26{
+    visibility: hidden;
+    width: 137px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 6px;
+    right: -6%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptext26 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.TTAN39{
+    max-width: 50px;
+    position: absolute;
+    top: -3px;
+    left: -41px;
+}
+.tooltip .tooltiptext27{
+    visibility: hidden;
+    width: 102px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 4px;
+    right: -4%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptext27 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.TTAN40{
+    max-width: 50px;
+    position: absolute;
+    top: -4px;
+    left: 15px;
+}
+.tooltip .tooltiptext28{
+    visibility: hidden;
+    width: 102px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -4px;
+    right: -2%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptext28 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.TTAN41{
+    max-width: 50px;
+    position: absolute;
+    top: -3px;
+    left: 72px;
+}
+.tooltip .tooltiptext29{
+    visibility: hidden;
+    width: 116px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -3px;
+    right: -3%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptext29 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.TTAN42{
+    max-width: 50px;
+    position: absolute;
+    top: -4px;
+    left: 128px;
+}
+.tooltip .tooltiptext18 {
+    visibility: hidden;
+    width: 97px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -1px;
+    right: -21%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+    font-weight: bold;
+}
+.tooltip:hover .tooltiptext18 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.TTAN31{
+    max-width: 50px;
+    position: absolute;
+    top: -4px;
+    left: -155px;
+}
+.tooltip .tooltiptext19{
+    visibility: hidden;
+    width: 122px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    right: -9%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptext19 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.TTAN32{
+    max-width: 50px;
+    position: absolute;
+    top: -4px;
+    left: -99px;
+}
+.tooltip .tooltiptext20{
+    visibility: hidden;
+    width: 150px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 6px;
+    right: -6%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptext20 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.TTAN33{
+    max-width: 50px;
+    position: absolute;
+    top: -3px;
+    left: -41px;
+}
+.tooltip .tooltiptext21{
+    visibility: hidden;
+    width: 150px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 4px;
+    right: -4%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptext21 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.TTAN34{
+    max-width: 50px;
+    position: absolute;
+    top: -4px;
+    left: 15px;
+}
+.tooltip .tooltiptext22{
+    visibility: hidden;
+    width: 122px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -4px;
+    right: -2%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptext22 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.TTAN35{
+    max-width: 50px;
+    position: absolute;
+    top: -3px;
+    left: 72px;
+}
+.tooltip .tooltiptext23{
+    visibility: hidden;
+    width: 116px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -3px;
+    right: -3%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptext23 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.TTAN36{
+    max-width: 50px;
+    position: absolute;
+    top: -4px;
+    left: 128px;
+}
+.tooltip .tooltiptext30 {
+    visibility: hidden;
+    width: 156px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: -21%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+    font-weight: bold;
+}
+.tooltip:hover .tooltiptext30 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.TTAN43{
+    max-width: 50px;
+    position: absolute;
+    top: -4px;
+    left: -155px;
+}
+.tooltip .tooltiptext31{
+    visibility: hidden;
+    width: 143px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 7px;
+    right: -9%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptext31 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.TTAN44{
+    max-width: 50px;
+    position: absolute;
+    top: -4px;
+    left: -99px;
+}
+.tooltip .tooltiptext32{
+    visibility: hidden;
+    width: 134px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    right: -6%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptext32 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.TTAN45{
+    max-width: 50px;
+    position: absolute;
+    top: -3px;
+    left: -41px;
+}
+.tooltip .tooltiptext33{
+    visibility: hidden;
+    width: 137px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -2px;
+    right: -5%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptext33 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.TTAN46{
+    max-width: 50px;
+    position: absolute;
+    top: -4px;
+    left: 15px;
+}
+.tooltip .tooltiptext34{
+    visibility: hidden;
+    width: 122px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 7px;
+    right: -4%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptext34 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.TTAN47{
+    max-width: 50px;
+    position: absolute;
+    top: -3px;
+    left: 72px;
+}
+.tooltip .tooltiptext35{
+    visibility: hidden;
+    width: 151px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -1px;
+    right: -3%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptext35 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.TTAN48{
+    max-width: 50px;
+    position: absolute;
+    top: -4px;
+    left: 128px;
+}
+/*********************************************/
+.tooltip .tooltiptextl{
+    visibility: hidden;
+    width: 183px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 49px;
+    right: -21%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptextl {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip .tooltiptextl a{
+    color: white;
+    transition: all 0.3s;
+}
+.tooltip .tooltiptextl a:hover{
+    color:black;
+}
+.tooltip .tooltiptextl1{
+    visibility: hidden;
+    width: 183px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 49px;
+    right: -10%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptextl1 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip .tooltiptextl1 a{
+    color: white;
+    transition: all 0.3s;
+}
+.tooltip .tooltiptextl1 a:hover{
+    color:black;
+}
+.tooltip .tooltiptextl2{
+    visibility: hidden;
+    width: 183px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 49px;
+    right: -6%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptextl2 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip .tooltiptextl2 a{
+    color: white;
+    transition: all 0.3s;
+}
+.tooltip .tooltiptextl2 a:hover{
+    color:black;
+}
+.tooltip .tooltiptextl3{
+    visibility: hidden;
+    width: 183px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 49px;
+    right: -4%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptextl3 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip .tooltiptextl3 a{
+    color: white;
+    transition: all 0.3s;
+}
+.tooltip .tooltiptextl3 a:hover{
+    color:black;
+}
+.tooltip .tooltiptextl4{
+    visibility: hidden;
+    width: 183px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    right: -2%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptextl4 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip .tooltiptextl4 a{
+    color: white;
+    transition: all 0.3s;
+}
+.tooltip .tooltiptextl4 a:hover{
+    color:black;
+}
+.tooltip .tooltiptextl5{
+    visibility: hidden;
+    width: 183px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 99px;
+    right: 0%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptextl5 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip .tooltiptextl5 a{
+    color: white;
+    transition: all 0.3s;
+}
+.tooltip .tooltiptextl5 a:hover{
+    color:black;
+}
+.tooltip .tooltiptextl6{
+    visibility: hidden;
+    width: 183px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 49px;
+    right: -21%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptextl6 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip .tooltiptextl6 a{
+    color: white;
+    transition: all 0.3s;
+}
+.tooltip .tooltiptextl6 a:hover{
+    color:black;
+}
+.tooltip .tooltiptextl7{
+    visibility: hidden;
+    width: 183px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 49px;
+    right: -10%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptextl7 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip .tooltiptextl7 a{
+    color: white;
+    transition: all 0.3s;
+}
+.tooltip .tooltiptextl7 a:hover{
+    color:black;
+}
+.tooltip .tooltiptextl8{
+    visibility: hidden;
+    width: 183px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 49px;
+    right: -6%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptextl8 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip .tooltiptextl8 a{
+    color: white;
+    transition: all 0.3s;
+}
+.tooltip .tooltiptextl8 a:hover{
+    color:black;
+}
+.tooltip .tooltiptextl9{
+    visibility: hidden;
+    width: 183px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 58px;
+    right: -2%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptextl9 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip .tooltiptextl9 a{
+    color: white;
+    transition: all 0.3s;
+}
+.tooltip .tooltiptextl9 a:hover{
+    color:black;
+}
+.tooltip .tooltiptextl10{
+    visibility: hidden;
+    width: 183px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    right: -2%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptextl10 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip .tooltiptextl10 a{
+    color: white;
+    transition: all 0.3s;
+}
+.tooltip .tooltiptextl10 a:hover{
+    color:black;
+}
+.tooltip .tooltiptextl11{
+    visibility: hidden;
+    width: 183px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 55px;
+    right:-3%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptextl11 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip .tooltiptextl11 a{
+    color: white;
+    transition: all 0.3s;
+}
+.tooltip .tooltiptextl11 a:hover{
+    color:black;
+}
+.tooltip .tooltiptextl12{
+    visibility: hidden;
+    width: 183px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 57px;
+    right: -11%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptextl12 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip .tooltiptextl12 a{
+    color: white;
+    transition: all 0.3s;
+}
+.tooltip .tooltiptextl12 a:hover{
+    color:black;
+}
+.tooltip .tooltiptextl13{
+    visibility: hidden;
+    width: 183px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 49px;
+    right: -10%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptextl13 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip .tooltiptextl13 a{
+    color: white;
+    transition: all 0.3s;
+}
+.tooltip .tooltiptextl13 a:hover{
+    color:black;
+}
+.tooltip .tooltiptextl14{
+    visibility: hidden;
+    width: 183px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 49px;
+    right: -7%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptextl14 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip .tooltiptextl14 a{
+    color: white;
+    transition: all 0.3s;
+}
+.tooltip .tooltiptextl14 a:hover{
+    color:black;
+}
+.tooltip .tooltiptextl15{
+    visibility: hidden;
+    width: 183px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 78px;
+    right: 0%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptextl15 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip .tooltiptextl15 a{
+    color: white;
+    transition: all 0.3s;
+}
+.tooltip .tooltiptextl15 a:hover{
+    color:black;
+}
+.tooltip .tooltiptextl16{
+    visibility: hidden;
+    width: 183px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 51px;
+    right: -4%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptextl16 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip .tooltiptextl16 a{
+    color: white;
+    transition: all 0.3s;
+}
+.tooltip .tooltiptextl16 a:hover{
+    color:black;
+}
+.tooltip .tooltiptextl17{
+    visibility: hidden;
+    width: 183px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 55px;
+    right:-3%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptextl17 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip .tooltiptextl17 a{
+    color: white;
+    transition: all 0.3s;
+}
+.tooltip .tooltiptextl17 a:hover{
+    color:black;
+}
+.tooltip .tooltiptextl18{
+    visibility: hidden;
+    width: 183px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 66px;
+    right: -22%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptextl18 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip .tooltiptextl18 a{
+    color: white;
+    transition: all 0.3s;
+}
+.tooltip .tooltiptextl18 a:hover{
+    color:black;
+}
+.tooltip .tooltiptextl19{
+    visibility: hidden;
+    width: 183px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 66px;
+    right: -10%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptextl19 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip .tooltiptextl19 a{
+    color: white;
+    transition: all 0.3s;
+}
+.tooltip .tooltiptextl19 a:hover{
+    color:black;
+}
+.tooltip .tooltiptextl20{
+    visibility: hidden;
+    width: 183px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 49px;
+    right: -6%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptextl20 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip .tooltiptextl20 a{
+    color: white;
+    transition: all 0.3s;
+}
+.tooltip .tooltiptextl20 a:hover{
+    color:black;
+}
+.tooltip .tooltiptextl21{
+    visibility: hidden;
+    width: 183px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 53px;
+    right: -4%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptextl21 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip .tooltiptextl21 a{
+    color: white;
+    transition: all 0.3s;
+}
+.tooltip .tooltiptextl21 a:hover{
+    color:black;
+}
+.tooltip .tooltiptextl22{
+    visibility: hidden;
+    width: 183px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 59px;
+    right: -2%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptextl22 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip .tooltiptextl22 a{
+    color: white;
+    transition: all 0.3s;
+}
+.tooltip .tooltiptextl22 a:hover{
+    color:black;
+}
+.tooltip .tooltiptextl23{
+    visibility: hidden;
+    width: 183px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    right:-3%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptextl23 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip .tooltiptextl23 a{
+    color: white;
+    transition: all 0.3s;
+}
+.tooltip .tooltiptextl23 a:hover{
+    color:black;
+}
+.tooltip .tooltiptextl24{
+    visibility: hidden;
+    width: 183px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 66px;
+    right: -22%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptextl24 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip .tooltiptextl24 a{
+    color: white;
+    transition: all 0.3s;
+}
+.tooltip .tooltiptextl24 a:hover{
+    color:black;
+}
+.tooltip .tooltiptextl25{
+    visibility: hidden;
+    width: 183px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 86px;
+    right: -9%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptextl25 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip .tooltiptextl25 a{
+    color: white;
+    transition: all 0.3s;
+}
+.tooltip .tooltiptextl25 a:hover{
+    color:black;
+}
+.tooltip .tooltiptextl26{
+    visibility: hidden;
+    width: 183px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 69px;
+    right: -6%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptextl26 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip .tooltiptextl26 a{
+    color: white;
+    transition: all 0.3s;
+}
+.tooltip .tooltiptextl26 a:hover{
+    color:black;
+}
+.tooltip .tooltiptextl27{
+    visibility: hidden;
+    width: 183px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 65px;
+    right: -4%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptextl27 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip .tooltiptextl27 a{
+    color: white;
+    transition: all 0.3s;
+}
+.tooltip .tooltiptextl27 a:hover{
+    color:black;
+}
+.tooltip .tooltiptextl28{
+    visibility: hidden;
+    width: 183px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 59px;
+    right: -2%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptextl28 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip .tooltiptextl28 a{
+    color: white;
+    transition: all 0.3s;
+}
+.tooltip .tooltiptextl28 a:hover{
+    color:black;
+}
+.tooltip .tooltiptextl29{
+    visibility: hidden;
+    width: 183px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 105px;
+    right:-3%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptextl29 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip .tooltiptextl29 a{
+    color: white;
+    transition: all 0.3s;
+}
+.tooltip .tooltiptextl29 a:hover{
+    color:black;
+}
+.tooltip .tooltiptextl30{
+    visibility: hidden;
+    width: 183px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 83px;
+    right: -22%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptextl30 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip .tooltiptextl30 a{
+    color: white;
+    transition: all 0.3s;
+}
+.tooltip .tooltiptextl30 a:hover{
+    color:black;
+}
+.tooltip .tooltiptextl31{
+    visibility: hidden;
+    width: 183px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 51px;
+    right: -9%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptextl31 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip .tooltiptextl31 a{
+    color: white;
+    transition: all 0.3s;
+}
+.tooltip .tooltiptextl31 a:hover{
+    color:black;
+}
+.tooltip .tooltiptextl32{
+    visibility: hidden;
+    width: 183px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 109px;
+    right: -6%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptextl32 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip .tooltiptextl32 a{
+    color: white;
+    transition: all 0.3s;
+}
+.tooltip .tooltiptextl32 a:hover{
+    color:black;
+}
+.tooltip .tooltiptextl33{
+    visibility: hidden;
+    width: 183px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 83px;
+    right: -6%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptextl33 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip .tooltiptextl33 a{
+    color: white;
+    transition: all 0.3s;
+}
+.tooltip .tooltiptextl33 a:hover{
+    color:black;
+}
+.tooltip .tooltiptextl34{
+    visibility: hidden;
+    width: 183px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 49px;
+    right: -4%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptextl34 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip .tooltiptextl34 a{
+    color: white;
+    transition: all 0.3s;
+}
+.tooltip .tooltiptextl34 a:hover{
+    color:black;
+}
+.tooltip .tooltiptextl35{
+    visibility: hidden;
+    width: 183px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 68px;
+    right:-3%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 80%;
+} 
+.tooltip:hover .tooltiptextl35 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip .tooltiptextl35 a{
+    color: white;
+    transition: all 0.3s;
+}
+.tooltip .tooltiptextl35 a:hover{
+    color:black;
+}
+/***********************************************/
+.tooltip1{
+    position: relative;
+    display: inline-block;
+}
+  
+.tooltip1 .tooltiptext27 {
+    visibility: hidden;
+    width: 171px;
+    height: 240px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -12px;
+    right: -82%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 64%;
+    font-weight: bold;
+}
+.tooltip1:hover .tooltiptext27 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip1 .tooltiptext27 a{
+    color: white;
+}
+.tooltip1 .tooltiptext20 {
+    visibility: hidden;
+    width: 164px;
+    height: 184px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 13px;
+    right: 95%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 64%;
+    font-weight: bold;
+}
+.tooltip1:hover .tooltiptext20 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip1 .tooltiptext20 a{
+    color: white;
+}
+.tooltip1 .tooltiptext21 {
+    visibility: hidden;
+    width: 301px;
+    height: 84px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: start;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -48px;
+    right: -25%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 64%;
+    font-weight: bold;
+}
+.tooltip1:hover .tooltiptext21 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip1 .tooltiptext21 a{
+    color: white;
+}
+.tooltip1 .tooltiptext22 {
+    visibility: hidden;
+    width: 302px;
+    height: 84px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: start;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -48px;
+    right: -28%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 64%;
+    font-weight: bold;
+}
+.tooltip1:hover .tooltiptext22 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip1 .tooltiptext22 a{
+    color: white;
+}
+.tooltip1 .tooltiptext23 {
+    visibility: hidden;
+    width: 180px;
+    height: 219px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -15px;
+    right: -86%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 64%;
+    font-weight: bold;
+}
+.tooltip1:hover .tooltiptext23 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip1 .tooltiptext23 a{
+    color: white;
+}
+.tooltip1 .tooltiptext24 {
+    visibility: hidden;
+    width: 145px;
+    height: 219px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -3px;
+    right: 105%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 64%;
+    font-weight: bold;
+}
+.tooltip1:hover .tooltiptext24 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip1 .tooltiptext24 a{
+    color: white;
+}
+.tooltip1 .tooltiptext25 {
+    visibility: hidden;
+    width: 305px;
+    height: 124px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: start;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 181px;
+    right: -22%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 64%;
+    font-weight: bold;
+}
+.tooltip1:hover .tooltiptext25 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip1 .tooltiptext25 a{
+    color: white;
+}
+  
+.tooltip1 .tooltiptext26 {
+    visibility: hidden;
+    width: 302px;
+    height: 105px;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    color: black;
+    text-align: start;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 193px;
+    right: -28%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 64%;
+    font-weight: bold;
+}
+.tooltip1:hover .tooltiptext26 {
+    visibility: visible;
+    opacity: 1;
+    font-weight: 900;
+}
+.tooltip1 .tooltiptext26 a{
+    color: white;
+}
+
+  
+  
+  
+
+/*************menu thêm**********/
+.left{
+	width: 200px;
+	height: 500px;
+	background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+	overflow-y: scroll;
+    position: relative;
+    top: 1.2cm;
+}
+.left ul{
+	list-style: none;
+	padding-left: 0px;
+}
+.left::-webkit-scrollbar {
+	width: 10px;
+	background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+}
+.left::-webkit-scrollbar-thumb {
+	background-color: lightgray;
+	border-radius: 4px;
+
+}
+.left ul li {
+	border-bottom: 2px solid white;
+	height: 70px;
+	line-height: 40px;
+	padding-left: 50px;
+    padding-top: 10px;
+}
+.left li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-family: 'Noto Sans JP', sans-serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.left li .ico{
+   color: white;
+   transition: all 0.2s;
+}
+.left li .ico:hover,
+.left li .ico:active{
+    color: black;
+}
+.left ul li:last-child{
+	border: none;
+}
+.left ul li:first-child{
+	border-top: none;
+}
+.luan0107{
+    margin-left: 10cm;
+    width: 8cm;
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    height: 70px;
+    color:black;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.p-long3{
+    text-align: center;
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 70%;
+    margin-left:3cm;
+    color: #8860D0;
+    line-height: 140%;
+    transition: all 0.5s;
+}
+.p-long3:hover,
+.p-long3:active{
+    color:black;
+}
+.left ul li a{
+    color: white;
+    transition: all 0.2s;
+}
+.left ul li a:hover,
+.left ul li a:active{
+    color: black;
+}
