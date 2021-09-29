@@ -4,7 +4,8 @@
     box-sizing: border-box;
   }
   html{
-    font-family: 'Noto Sans JP', sans-serif;
+    /* font-family: 'Noto Sans JP', sans-serif; */
+    font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 20px;
     color: #5a5a5a;
     background-color: #ffffff;
@@ -148,9 +149,7 @@ footer{
     color: black;
     font-weight: 700;
     position: absolute;
-    top: 9px;
     left: 15px;
-    font-size: 82%;
 }
 .TTAN4{
     position: relative;
@@ -184,7 +183,6 @@ footer{
     margin-top: 20px;
 }
 .TT5{
-    font-size: 90%;
     color: black;
     font-weight: 700;
     position: absolute;
